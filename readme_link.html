@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Readme File &mdash; RLkit 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="rlkit.Agents package" href="rlkit.Agents.html" />
+    <link rel="prev" title="Welcome to RLkit’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            RLkit
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Readme File</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#rl-kit">RL Kit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#features">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#work-in-progress">Work in Progress</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#contributions">Contributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#license">License</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rlkit.Agents.html">rlkit.Agents package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rlkit.Models.html">rlkit.Models package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RLkit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Readme File</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/readme_link.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="readme-file">
+<h1>Readme File<a class="headerlink" href="#readme-file" title="Permalink to this heading"></a></h1>
+<section id="rl-kit">
+<h2>RL Kit<a class="headerlink" href="#rl-kit" title="Permalink to this heading"></a></h2>
+<p>RL Kit is a robust and flexible Reinforcement Learning (RL) framework. It provides a rich set of features to facilitate the development, training, and deployment of RL algorithms.</p>
+<section id="usage">
+<h3>Usage<a class="headerlink" href="#usage" title="Permalink to this heading"></a></h3>
+<p>For usage examples, please check <code class="docutils literal notranslate"><span class="pre">getting-started.ipynb</span></code>.</p>
+</section>
+<section id="features">
+<h3>Features<a class="headerlink" href="#features" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Algorithm Support</strong>: Currently, RL Kit supports the following algorithms:</p>
+<ul>
+<li><p>Proximal Policy Optimization (PPO)</p></li>
+<li><p>Deep Q-Network (DDQN)</p></li>
+</ul>
+</li>
+<li><p><strong>Gym API Compatibility</strong>: RL Kit is designed to work seamlessly with environments that implement the OpenAI Gym API.</p></li>
+<li><p><strong>Customizable Agents</strong>: You can create and extend your own agent by overriding certain functions.</p></li>
+<li><p><strong>Neural Network Flexibility</strong>: It’s straightforward to integrate your own neural network models, including recurrent models. RL Kit’s agent implementations fully support these.</p></li>
+<li><p><strong>Customizable Intrinsic Reward</strong>: Overriding agent’s intrinsic reward is as simple as using <code class="docutils literal notranslate"><span class="pre">agent.set_intrinsic_reward_func()</span></code>.</p></li>
+<li><p><strong>Override Exploration Method Using heuristic functions</strong>: Overriding exploration method from random choice to some user inputed heurstic to speed up train in certein env <code class="docutils literal notranslate"><span class="pre">HeuristicExplorer()</span></code>.</p></li>
+<li><p><strong>Observation Flexibility</strong>: RL Kit supports dictionary format for observations.</p></li>
+<li><p><strong>Metrics:</strong> Dumps all the metrics to tensorboard.</p></li>
+</ul>
+<p>And many more features!</p>
+<p>A short summery of curr supported:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Algorithm</p></th>
+<th class="head"><p>Discrete action</p></th>
+<th class="head"><p>Continuous action</p></th>
+<th class="head"><p>Recurrent</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>cliped-PPO</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="row-odd"><td><p>DQN (ddqn)</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+</tr>
+</tbody>
+</table>
+<p>In this table, the first column represents the algorithm names (PPO and DQN). The second column indicates whether the algorithm supports discrete actions (Yes) or not (No). The third column indicates whether the algorithm supports continuous actions (Yes) or not (No). The last column represents whether the algorithm supports recurrent architectures (Yes) or not (No).</p>
+<p>Please note that the table content is based on general information and may vary depending on the specific implementation or version of the algorithms.</p>
+</section>
+<section id="work-in-progress">
+<h3>Work in Progress<a class="headerlink" href="#work-in-progress" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Add support for callbacks</p></li>
+<li><p>Add Suppor for MARL</p></li>
+</ul>
+</section>
+<section id="contributions">
+<h3>Contributions<a class="headerlink" href="#contributions" title="Permalink to this heading"></a></h3>
+<p>We welcome contributions! If you’re interested in enhancing the features, fixing bugs, or adding new RL algorithms, feel free to open a pull request or issue.</p>
+</section>
+<section id="license">
+<h3>License<a class="headerlink" href="#license" title="Permalink to this heading"></a></h3>
+<p>RL Kit is MIT licensed.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to RLkit’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="rlkit.Agents.html" class="btn btn-neutral float-right" title="rlkit.Agents package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Nitsan Levy.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
