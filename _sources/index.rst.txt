@@ -11,8 +11,8 @@ Welcome to RLkit's documentation!
    :caption: Contents:
    
    readme_link
-   rlkit.Agents
-   rlkit.Models
+   rlkit.agents
+   rlkit.models
 
 
 Indices and tables

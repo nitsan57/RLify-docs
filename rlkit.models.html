@@ -18,7 +18,8 @@
         <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="rlkit.agents package" href="rlkit.agents.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,8 +42,71 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="readme_link.html">Welcome</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rlkit.agents.html">rlkit.agents package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">rlkit.models package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-rlkit.models.base_model">rlkit.models.base_model module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#rlkit.models.base_model.AbstractModel"><code class="docutils literal notranslate"><span class="pre">AbstractModel</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.base_model.AbstractModel.is_rnn"><code class="docutils literal notranslate"><span class="pre">AbstractModel.is_rnn</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.base_model.AbstractModel.__init__"><code class="docutils literal notranslate"><span class="pre">AbstractModel.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.base_model.AbstractModel.get_total_params"><code class="docutils literal notranslate"><span class="pre">AbstractModel.get_total_params()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.base_model.AbstractModel.__init_subclass__"><code class="docutils literal notranslate"><span class="pre">AbstractModel.__init_subclass__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.base_model.AbstractModel.forward"><code class="docutils literal notranslate"><span class="pre">AbstractModel.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.base_model.AbstractModel.__abstractmethods__"><code class="docutils literal notranslate"><span class="pre">AbstractModel.__abstractmethods__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.base_model.AbstractModel.__annotations__"><code class="docutils literal notranslate"><span class="pre">AbstractModel.__annotations__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.base_model.AbstractModel.__module__"><code class="docutils literal notranslate"><span class="pre">AbstractModel.__module__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.base_model.AbstractModel._abc_impl"><code class="docutils literal notranslate"><span class="pre">AbstractModel._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.base_model.AbstractModel.reset"><code class="docutils literal notranslate"><span class="pre">AbstractModel.reset()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-rlkit.models.fc">rlkit.models.fc module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#rlkit.models.fc.FC"><code class="docutils literal notranslate"><span class="pre">FC</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.fc.FC.__init__"><code class="docutils literal notranslate"><span class="pre">FC.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.fc.FC.forward"><code class="docutils literal notranslate"><span class="pre">FC.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.fc.FC.reset"><code class="docutils literal notranslate"><span class="pre">FC.reset()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.fc.FC.__abstractmethods__"><code class="docutils literal notranslate"><span class="pre">FC.__abstractmethods__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.fc.FC.__annotations__"><code class="docutils literal notranslate"><span class="pre">FC.__annotations__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.fc.FC.__module__"><code class="docutils literal notranslate"><span class="pre">FC.__module__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.fc.FC._abc_impl"><code class="docutils literal notranslate"><span class="pre">FC._abc_impl</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-rlkit.models.model_factory">rlkit.models.model_factory module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#rlkit.models.model_factory.get_model_class"><code class="docutils literal notranslate"><span class="pre">get_model_class()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-rlkit.models.rnn">rlkit.models.rnn module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#rlkit.models.rnn.pack_from_done_indices"><code class="docutils literal notranslate"><span class="pre">pack_from_done_indices()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rlkit.models.rnn.get_seqs_indices_for_pack"><code class="docutils literal notranslate"><span class="pre">get_seqs_indices_for_pack()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rlkit.models.rnn.ReccurentLayer"><code class="docutils literal notranslate"><span class="pre">ReccurentLayer</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.rnn.ReccurentLayer.is_rnn"><code class="docutils literal notranslate"><span class="pre">ReccurentLayer.is_rnn</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.rnn.ReccurentLayer.__init__"><code class="docutils literal notranslate"><span class="pre">ReccurentLayer.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.rnn.ReccurentLayer.forward"><code class="docutils literal notranslate"><span class="pre">ReccurentLayer.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.rnn.ReccurentLayer.reset"><code class="docutils literal notranslate"><span class="pre">ReccurentLayer.reset()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.rnn.ReccurentLayer.__abstractmethods__"><code class="docutils literal notranslate"><span class="pre">ReccurentLayer.__abstractmethods__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.rnn.ReccurentLayer.__annotations__"><code class="docutils literal notranslate"><span class="pre">ReccurentLayer.__annotations__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.rnn.ReccurentLayer.__module__"><code class="docutils literal notranslate"><span class="pre">ReccurentLayer.__module__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.rnn.ReccurentLayer._abc_impl"><code class="docutils literal notranslate"><span class="pre">ReccurentLayer._abc_impl</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#rlkit.models.rnn.GRU"><code class="docutils literal notranslate"><span class="pre">GRU</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.rnn.GRU.__init__"><code class="docutils literal notranslate"><span class="pre">GRU.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.rnn.GRU.forward"><code class="docutils literal notranslate"><span class="pre">GRU.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.rnn.GRU.reset"><code class="docutils literal notranslate"><span class="pre">GRU.reset()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.rnn.GRU.__abstractmethods__"><code class="docutils literal notranslate"><span class="pre">GRU.__abstractmethods__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.rnn.GRU.__annotations__"><code class="docutils literal notranslate"><span class="pre">GRU.__annotations__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.rnn.GRU.__module__"><code class="docutils literal notranslate"><span class="pre">GRU.__module__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlkit.models.rnn.GRU._abc_impl"><code class="docutils literal notranslate"><span class="pre">GRU._abc_impl</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -61,7 +125,7 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">rlkit.models package</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/rlkit.Models.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/rlkit.models.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -328,7 +392,9 @@ registered hooks while the latter silently ignores them.</p>
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="rlkit.agents.html" class="btn btn-neutral float-left" title="rlkit.agents package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
   <hr/>
 
