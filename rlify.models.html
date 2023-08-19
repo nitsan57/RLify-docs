@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>rlify.models package &mdash; RLify 0.0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="rlify.agents package" href="rlify.agents.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            RLify
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme_link.html">Welcome</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rlify.agents.html">rlify.agents package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">rlify.models package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-rlify.models.base_model">rlify.models.base_model module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#rlify.models.base_model.AbstractModel"><code class="docutils literal notranslate"><span class="pre">AbstractModel</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.base_model.AbstractModel.is_rnn"><code class="docutils literal notranslate"><span class="pre">AbstractModel.is_rnn</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.base_model.AbstractModel.__init__"><code class="docutils literal notranslate"><span class="pre">AbstractModel.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.base_model.AbstractModel.get_total_params"><code class="docutils literal notranslate"><span class="pre">AbstractModel.get_total_params()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.base_model.AbstractModel.__init_subclass__"><code class="docutils literal notranslate"><span class="pre">AbstractModel.__init_subclass__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.base_model.AbstractModel.forward"><code class="docutils literal notranslate"><span class="pre">AbstractModel.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.base_model.AbstractModel.__abstractmethods__"><code class="docutils literal notranslate"><span class="pre">AbstractModel.__abstractmethods__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.base_model.AbstractModel.__annotations__"><code class="docutils literal notranslate"><span class="pre">AbstractModel.__annotations__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.base_model.AbstractModel.__module__"><code class="docutils literal notranslate"><span class="pre">AbstractModel.__module__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.base_model.AbstractModel._abc_impl"><code class="docutils literal notranslate"><span class="pre">AbstractModel._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.base_model.AbstractModel.reset"><code class="docutils literal notranslate"><span class="pre">AbstractModel.reset()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-rlify.models.fc">rlify.models.fc module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#rlify.models.fc.FC"><code class="docutils literal notranslate"><span class="pre">FC</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.fc.FC.__init__"><code class="docutils literal notranslate"><span class="pre">FC.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.fc.FC.forward"><code class="docutils literal notranslate"><span class="pre">FC.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.fc.FC.reset"><code class="docutils literal notranslate"><span class="pre">FC.reset()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.fc.FC.__abstractmethods__"><code class="docutils literal notranslate"><span class="pre">FC.__abstractmethods__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.fc.FC.__annotations__"><code class="docutils literal notranslate"><span class="pre">FC.__annotations__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.fc.FC.__module__"><code class="docutils literal notranslate"><span class="pre">FC.__module__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.fc.FC._abc_impl"><code class="docutils literal notranslate"><span class="pre">FC._abc_impl</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-rlify.models.model_factory">rlify.models.model_factory module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#rlify.models.model_factory.get_model_class"><code class="docutils literal notranslate"><span class="pre">get_model_class()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-rlify.models.rnn">rlify.models.rnn module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#rlify.models.rnn.pack_from_done_indices"><code class="docutils literal notranslate"><span class="pre">pack_from_done_indices()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rlify.models.rnn.get_seqs_indices_for_pack"><code class="docutils literal notranslate"><span class="pre">get_seqs_indices_for_pack()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rlify.models.rnn.ReccurentLayer"><code class="docutils literal notranslate"><span class="pre">ReccurentLayer</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.ReccurentLayer.is_rnn"><code class="docutils literal notranslate"><span class="pre">ReccurentLayer.is_rnn</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.ReccurentLayer.__init__"><code class="docutils literal notranslate"><span class="pre">ReccurentLayer.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.ReccurentLayer.forward"><code class="docutils literal notranslate"><span class="pre">ReccurentLayer.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.ReccurentLayer.reset"><code class="docutils literal notranslate"><span class="pre">ReccurentLayer.reset()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.ReccurentLayer.__abstractmethods__"><code class="docutils literal notranslate"><span class="pre">ReccurentLayer.__abstractmethods__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.ReccurentLayer.__annotations__"><code class="docutils literal notranslate"><span class="pre">ReccurentLayer.__annotations__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.ReccurentLayer.__module__"><code class="docutils literal notranslate"><span class="pre">ReccurentLayer.__module__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.ReccurentLayer._abc_impl"><code class="docutils literal notranslate"><span class="pre">ReccurentLayer._abc_impl</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#rlify.models.rnn.GRU"><code class="docutils literal notranslate"><span class="pre">GRU</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.GRU.__init__"><code class="docutils literal notranslate"><span class="pre">GRU.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.GRU.forward"><code class="docutils literal notranslate"><span class="pre">GRU.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.GRU.reset"><code class="docutils literal notranslate"><span class="pre">GRU.reset()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.GRU.__abstractmethods__"><code class="docutils literal notranslate"><span class="pre">GRU.__abstractmethods__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.GRU.__annotations__"><code class="docutils literal notranslate"><span class="pre">GRU.__annotations__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.GRU.__module__"><code class="docutils literal notranslate"><span class="pre">GRU.__module__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.GRU._abc_impl"><code class="docutils literal notranslate"><span class="pre">GRU._abc_impl</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RLify</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">rlify.models package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/rlify.models.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="rlify-models-package">
+<h1>rlify.models package<a class="headerlink" href="#rlify-models-package" title="Permalink to this heading"></a></h1>
+<section id="module-rlify.models.base_model">
+<span id="rlify-models-base-model-module"></span><h2>rlify.models.base_model module<a class="headerlink" href="#module-rlify.models.base_model" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="rlify.models.base_model.AbstractModel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rlify.models.base_model.</span></span><span class="sig-name descname"><span class="pre">AbstractModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_shape</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.base_model.AbstractModel" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.models.base_model.AbstractModel.is_rnn">
+<span class="sig-name descname"><span class="pre">is_rnn</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#rlify.models.base_model.AbstractModel.is_rnn" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rlify.models.base_model.AbstractModel.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_shape</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.base_model.AbstractModel.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rlify.models.base_model.AbstractModel.get_total_params">
+<span class="sig-name descname"><span class="pre">get_total_params</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.base_model.AbstractModel.get_total_params" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rlify.models.base_model.AbstractModel.__init_subclass__">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__init_subclass__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.base_model.AbstractModel.__init_subclass__" title="Permalink to this definition"></a></dt>
+<dd><p>This method is called when a class is subclassed.</p>
+<p>The default implementation does nothing. It may be
+overridden to extend subclasses.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rlify.models.base_model.AbstractModel.forward">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dones</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.base_model.AbstractModel.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.models.base_model.AbstractModel.__abstractmethods__">
+<span class="sig-name descname"><span class="pre">__abstractmethods__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">frozenset({'forward',</span> <span class="pre">'reset'})</span></em><a class="headerlink" href="#rlify.models.base_model.AbstractModel.__abstractmethods__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.models.base_model.AbstractModel.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'__call__':</span> <span class="pre">'Callable[...,</span> <span class="pre">Any]',</span> <span class="pre">'_backward_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_backward_pre_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_buffers':</span> <span class="pre">'Dict[str,</span> <span class="pre">Optional[Tensor]]',</span> <span class="pre">'_forward_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_forward_hooks_with_kwargs':</span> <span class="pre">'Dict[int,</span> <span class="pre">bool]',</span> <span class="pre">'_forward_pre_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_forward_pre_hooks_with_kwargs':</span> <span class="pre">'Dict[int,</span> <span class="pre">bool]',</span> <span class="pre">'_is_full_backward_hook':</span> <span class="pre">'Optional[bool]',</span> <span class="pre">'_load_state_dict_post_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_load_state_dict_pre_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_modules':</span> <span class="pre">&quot;Dict[str,</span> <span class="pre">Optional['Module']]&quot;,</span> <span class="pre">'_non_persistent_buffers_set':</span> <span class="pre">'Set[str]',</span> <span class="pre">'_parameters':</span> <span class="pre">'Dict[str,</span> <span class="pre">Optional[Parameter]]',</span> <span class="pre">'_state_dict_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_state_dict_pre_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_version':</span> <span class="pre">'int',</span> <span class="pre">'call_super_init':</span> <span class="pre">'bool',</span> <span class="pre">'dump_patches':</span> <span class="pre">'bool',</span> <span class="pre">'forward':</span> <span class="pre">'Callable[...,</span> <span class="pre">Any]',</span> <span class="pre">'training':</span> <span class="pre">'bool'}</span></em><a class="headerlink" href="#rlify.models.base_model.AbstractModel.__annotations__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.models.base_model.AbstractModel.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'rlify.models.base_model'</span></em><a class="headerlink" href="#rlify.models.base_model.AbstractModel.__module__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.models.base_model.AbstractModel._abc_impl">
+<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#rlify.models.base_model.AbstractModel._abc_impl" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rlify.models.base_model.AbstractModel.reset">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.base_model.AbstractModel.reset" title="Permalink to this definition"></a></dt>
+<dd><p>if not rnn - impl can be just: pass, otherwise resets hidden state</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-rlify.models.fc">
+<span id="rlify-models-fc-module"></span><h2>rlify.models.fc module<a class="headerlink" href="#module-rlify.models.fc" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="rlify.models.fc.FC">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rlify.models.fc.</span></span><span class="sig-name descname"><span class="pre">FC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embed_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">repeat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.fc.FC" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rlify.models.base_model.AbstractModel" title="rlify.models.base_model.AbstractModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbstractModel</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="rlify.models.fc.FC.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embed_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">repeat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.fc.FC.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rlify.models.fc.FC.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.fc.FC.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rlify.models.fc.FC.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.fc.FC.reset" title="Permalink to this definition"></a></dt>
+<dd><p>if not rnn - impl can be just: pass, otherwise resets hidden state</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.models.fc.FC.__abstractmethods__">
+<span class="sig-name descname"><span class="pre">__abstractmethods__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">frozenset({})</span></em><a class="headerlink" href="#rlify.models.fc.FC.__abstractmethods__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.models.fc.FC.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'__call__':</span> <span class="pre">'Callable[...,</span> <span class="pre">Any]',</span> <span class="pre">'_backward_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_backward_pre_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_buffers':</span> <span class="pre">'Dict[str,</span> <span class="pre">Optional[Tensor]]',</span> <span class="pre">'_forward_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_forward_hooks_with_kwargs':</span> <span class="pre">'Dict[int,</span> <span class="pre">bool]',</span> <span class="pre">'_forward_pre_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_forward_pre_hooks_with_kwargs':</span> <span class="pre">'Dict[int,</span> <span class="pre">bool]',</span> <span class="pre">'_is_full_backward_hook':</span> <span class="pre">'Optional[bool]',</span> <span class="pre">'_load_state_dict_post_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_load_state_dict_pre_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_modules':</span> <span class="pre">&quot;Dict[str,</span> <span class="pre">Optional['Module']]&quot;,</span> <span class="pre">'_non_persistent_buffers_set':</span> <span class="pre">'Set[str]',</span> <span class="pre">'_parameters':</span> <span class="pre">'Dict[str,</span> <span class="pre">Optional[Parameter]]',</span> <span class="pre">'_state_dict_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_state_dict_pre_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_version':</span> <span class="pre">'int',</span> <span class="pre">'call_super_init':</span> <span class="pre">'bool',</span> <span class="pre">'dump_patches':</span> <span class="pre">'bool',</span> <span class="pre">'forward':</span> <span class="pre">'Callable[...,</span> <span class="pre">Any]',</span> <span class="pre">'training':</span> <span class="pre">'bool'}</span></em><a class="headerlink" href="#rlify.models.fc.FC.__annotations__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.models.fc.FC.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'rlify.models.fc'</span></em><a class="headerlink" href="#rlify.models.fc.FC.__module__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.models.fc.FC._abc_impl">
+<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#rlify.models.fc.FC._abc_impl" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-rlify.models.model_factory">
+<span id="rlify-models-model-factory-module"></span><h2>rlify.models.model_factory module<a class="headerlink" href="#module-rlify.models.model_factory" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="rlify.models.model_factory.get_model_class">
+<span class="sig-prename descclassname"><span class="pre">rlify.models.model_factory.</span></span><span class="sig-name descname"><span class="pre">get_model_class</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.model_factory.get_model_class" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-rlify.models.rnn">
+<span id="rlify-models-rnn-module"></span><h2>rlify.models.rnn module<a class="headerlink" href="#module-rlify.models.rnn" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="rlify.models.rnn.pack_from_done_indices">
+<span class="sig-prename descclassname"><span class="pre">rlify.models.rnn.</span></span><span class="sig-name descname"><span class="pre">pack_from_done_indices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dones</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.rnn.pack_from_done_indices" title="Permalink to this definition"></a></dt>
+<dd><p>returns pakced obs</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="rlify.models.rnn.get_seqs_indices_for_pack">
+<span class="sig-prename descclassname"><span class="pre">rlify.models.rnn.</span></span><span class="sig-name descname"><span class="pre">get_seqs_indices_for_pack</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">done_indices</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.rnn.get_seqs_indices_for_pack" title="Permalink to this definition"></a></dt>
+<dd><p>returns seq_lens, sorted_data_sub_indices</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="rlify.models.rnn.ReccurentLayer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rlify.models.rnn.</span></span><span class="sig-name descname"><span class="pre">ReccurentLayer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_shape</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.rnn.ReccurentLayer" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rlify.models.base_model.AbstractModel" title="rlify.models.base_model.AbstractModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbstractModel</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.models.rnn.ReccurentLayer.is_rnn">
+<span class="sig-name descname"><span class="pre">is_rnn</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#rlify.models.rnn.ReccurentLayer.is_rnn" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rlify.models.rnn.ReccurentLayer.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_shape</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.rnn.ReccurentLayer.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rlify.models.rnn.ReccurentLayer.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dones</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.rnn.ReccurentLayer.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rlify.models.rnn.ReccurentLayer.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.rnn.ReccurentLayer.reset" title="Permalink to this definition"></a></dt>
+<dd><p>if not rnn - impl can be just: pass, otherwise resets hidden state</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.models.rnn.ReccurentLayer.__abstractmethods__">
+<span class="sig-name descname"><span class="pre">__abstractmethods__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">frozenset({})</span></em><a class="headerlink" href="#rlify.models.rnn.ReccurentLayer.__abstractmethods__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.models.rnn.ReccurentLayer.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'__call__':</span> <span class="pre">'Callable[...,</span> <span class="pre">Any]',</span> <span class="pre">'_backward_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_backward_pre_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_buffers':</span> <span class="pre">'Dict[str,</span> <span class="pre">Optional[Tensor]]',</span> <span class="pre">'_forward_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_forward_hooks_with_kwargs':</span> <span class="pre">'Dict[int,</span> <span class="pre">bool]',</span> <span class="pre">'_forward_pre_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_forward_pre_hooks_with_kwargs':</span> <span class="pre">'Dict[int,</span> <span class="pre">bool]',</span> <span class="pre">'_is_full_backward_hook':</span> <span class="pre">'Optional[bool]',</span> <span class="pre">'_load_state_dict_post_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_load_state_dict_pre_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_modules':</span> <span class="pre">&quot;Dict[str,</span> <span class="pre">Optional['Module']]&quot;,</span> <span class="pre">'_non_persistent_buffers_set':</span> <span class="pre">'Set[str]',</span> <span class="pre">'_parameters':</span> <span class="pre">'Dict[str,</span> <span class="pre">Optional[Parameter]]',</span> <span class="pre">'_state_dict_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_state_dict_pre_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_version':</span> <span class="pre">'int',</span> <span class="pre">'call_super_init':</span> <span class="pre">'bool',</span> <span class="pre">'dump_patches':</span> <span class="pre">'bool',</span> <span class="pre">'forward':</span> <span class="pre">'Callable[...,</span> <span class="pre">Any]',</span> <span class="pre">'training':</span> <span class="pre">'bool'}</span></em><a class="headerlink" href="#rlify.models.rnn.ReccurentLayer.__annotations__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.models.rnn.ReccurentLayer.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'rlify.models.rnn'</span></em><a class="headerlink" href="#rlify.models.rnn.ReccurentLayer.__module__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.models.rnn.ReccurentLayer._abc_impl">
+<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#rlify.models.rnn.ReccurentLayer._abc_impl" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="rlify.models.rnn.GRU">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rlify.models.rnn.</span></span><span class="sig-name descname"><span class="pre">GRU</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_grus</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.rnn.GRU" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rlify.models.rnn.ReccurentLayer" title="rlify.models.rnn.ReccurentLayer"><code class="xref py py-class docutils literal notranslate"><span class="pre">ReccurentLayer</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="rlify.models.rnn.GRU.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_grus</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.rnn.GRU.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rlify.models.rnn.GRU.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dones</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.rnn.GRU.forward" title="Permalink to this definition"></a></dt>
+<dd><p>x is padded pack</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rlify.models.rnn.GRU.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.rnn.GRU.reset" title="Permalink to this definition"></a></dt>
+<dd><p>if not rnn - impl can be just: pass, otherwise resets hidden state</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.models.rnn.GRU.__abstractmethods__">
+<span class="sig-name descname"><span class="pre">__abstractmethods__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">frozenset({})</span></em><a class="headerlink" href="#rlify.models.rnn.GRU.__abstractmethods__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.models.rnn.GRU.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'__call__':</span> <span class="pre">'Callable[...,</span> <span class="pre">Any]',</span> <span class="pre">'_backward_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_backward_pre_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_buffers':</span> <span class="pre">'Dict[str,</span> <span class="pre">Optional[Tensor]]',</span> <span class="pre">'_forward_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_forward_hooks_with_kwargs':</span> <span class="pre">'Dict[int,</span> <span class="pre">bool]',</span> <span class="pre">'_forward_pre_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_forward_pre_hooks_with_kwargs':</span> <span class="pre">'Dict[int,</span> <span class="pre">bool]',</span> <span class="pre">'_is_full_backward_hook':</span> <span class="pre">'Optional[bool]',</span> <span class="pre">'_load_state_dict_post_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_load_state_dict_pre_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_modules':</span> <span class="pre">&quot;Dict[str,</span> <span class="pre">Optional['Module']]&quot;,</span> <span class="pre">'_non_persistent_buffers_set':</span> <span class="pre">'Set[str]',</span> <span class="pre">'_parameters':</span> <span class="pre">'Dict[str,</span> <span class="pre">Optional[Parameter]]',</span> <span class="pre">'_state_dict_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_state_dict_pre_hooks':</span> <span class="pre">'Dict[int,</span> <span class="pre">Callable]',</span> <span class="pre">'_version':</span> <span class="pre">'int',</span> <span class="pre">'call_super_init':</span> <span class="pre">'bool',</span> <span class="pre">'dump_patches':</span> <span class="pre">'bool',</span> <span class="pre">'forward':</span> <span class="pre">'Callable[...,</span> <span class="pre">Any]',</span> <span class="pre">'training':</span> <span class="pre">'bool'}</span></em><a class="headerlink" href="#rlify.models.rnn.GRU.__annotations__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.models.rnn.GRU.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'rlify.models.rnn'</span></em><a class="headerlink" href="#rlify.models.rnn.GRU.__module__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.models.rnn.GRU._abc_impl">
+<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#rlify.models.rnn.GRU._abc_impl" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="rlify.agents.html" class="btn btn-neutral float-left" title="rlify.agents package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Nitsan Levy.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
