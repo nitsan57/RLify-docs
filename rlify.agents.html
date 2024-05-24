@@ -73,8 +73,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.drl_agent.RL_Agent.act"><code class="docutils literal notranslate"><span class="pre">RL_Agent.act()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.drl_agent.RL_Agent.load_highest_score_agent"><code class="docutils literal notranslate"><span class="pre">RL_Agent.load_highest_score_agent()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.drl_agent.RL_Agent.get_highest_score_agent_ckpt_path"><code class="docutils literal notranslate"><span class="pre">RL_Agent.get_highest_score_agent_ckpt_path()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.drl_agent.RL_Agent.best_act_discrete"><code class="docutils literal notranslate"><span class="pre">RL_Agent.best_act_discrete()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.drl_agent.RL_Agent.best_act_cont"><code class="docutils literal notranslate"><span class="pre">RL_Agent.best_act_cont()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.drl_agent.RL_Agent.best_act"><code class="docutils literal notranslate"><span class="pre">RL_Agent.best_act()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.drl_agent.RL_Agent.norm_obs"><code class="docutils literal notranslate"><span class="pre">RL_Agent.norm_obs()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.drl_agent.RL_Agent.pre_process_obs_for_act"><code class="docutils literal notranslate"><span class="pre">RL_Agent.pre_process_obs_for_act()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.drl_agent.RL_Agent.return_correct_actions_dim"><code class="docutils literal notranslate"><span class="pre">RL_Agent.return_correct_actions_dim()</span></code></a></li>
@@ -85,12 +84,12 @@
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.drl_agent.RL_Agent.reset_rnn_hidden"><code class="docutils literal notranslate"><span class="pre">RL_Agent.reset_rnn_hidden()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.drl_agent.RL_Agent.get_last_collected_experiences"><code class="docutils literal notranslate"><span class="pre">RL_Agent.get_last_collected_experiences()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.drl_agent.RL_Agent.clear_exp"><code class="docutils literal notranslate"><span class="pre">RL_Agent.clear_exp()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.drl_agent.RL_Agent.run_env"><code class="docutils literal notranslate"><span class="pre">RL_Agent.run_env()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.drl_agent.RL_Agent.__abstractmethods__"><code class="docutils literal notranslate"><span class="pre">RL_Agent.__abstractmethods__</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.drl_agent.RL_Agent.__dict__"><code class="docutils literal notranslate"><span class="pre">RL_Agent.__dict__</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.drl_agent.RL_Agent.__module__"><code class="docutils literal notranslate"><span class="pre">RL_Agent.__module__</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.drl_agent.RL_Agent.__weakref__"><code class="docutils literal notranslate"><span class="pre">RL_Agent.__weakref__</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.drl_agent.RL_Agent._abc_impl"><code class="docutils literal notranslate"><span class="pre">RL_Agent._abc_impl</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.drl_agent.RL_Agent.run_env"><code class="docutils literal notranslate"><span class="pre">RL_Agent.run_env()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -98,12 +97,12 @@
 <li class="toctree-l2"><a class="reference internal" href="#module-rlify.agents.vdqn_agent">rlify.agents.vdqn_agent module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#rlify.agents.vdqn_agent.VDQN_Agent"><code class="docutils literal notranslate"><span class="pre">VDQN_Agent</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.vdqn_agent.VDQN_Agent.__init__"><code class="docutils literal notranslate"><span class="pre">VDQN_Agent.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.vdqn_agent.VDQN_Agent.check_action_space"><code class="docutils literal notranslate"><span class="pre">VDQN_Agent.check_action_space()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.vdqn_agent.VDQN_Agent.setup_models"><code class="docutils literal notranslate"><span class="pre">VDQN_Agent.setup_models()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.vdqn_agent.VDQN_Agent.get_models_input_output_shape"><code class="docutils literal notranslate"><span class="pre">VDQN_Agent.get_models_input_output_shape()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.vdqn_agent.VDQN_Agent.set_train_mode"><code class="docutils literal notranslate"><span class="pre">VDQN_Agent.set_train_mode()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.vdqn_agent.VDQN_Agent.set_eval_mode"><code class="docutils literal notranslate"><span class="pre">VDQN_Agent.set_eval_mode()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.vdqn_agent.VDQN_Agent.best_act_cont"><code class="docutils literal notranslate"><span class="pre">VDQN_Agent.best_act_cont()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.vdqn_agent.VDQN_Agent.best_act_discrete"><code class="docutils literal notranslate"><span class="pre">VDQN_Agent.best_act_discrete()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.vdqn_agent.VDQN_Agent.best_act"><code class="docutils literal notranslate"><span class="pre">VDQN_Agent.best_act()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.vdqn_agent.VDQN_Agent.save_agent"><code class="docutils literal notranslate"><span class="pre">VDQN_Agent.save_agent()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.vdqn_agent.VDQN_Agent.load_agent"><code class="docutils literal notranslate"><span class="pre">VDQN_Agent.load_agent()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.vdqn_agent.VDQN_Agent.act_base"><code class="docutils literal notranslate"><span class="pre">VDQN_Agent.act_base()</span></code></a></li>
@@ -129,12 +128,8 @@
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.dqn_agent.DQN_Agent.set_eval_mode"><code class="docutils literal notranslate"><span class="pre">DQN_Agent.set_eval_mode()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.dqn_agent.DQN_Agent.hard_target_update"><code class="docutils literal notranslate"><span class="pre">DQN_Agent.hard_target_update()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.dqn_agent.DQN_Agent.soft_target_update"><code class="docutils literal notranslate"><span class="pre">DQN_Agent.soft_target_update()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.dqn_agent.DQN_Agent.best_act_cont"><code class="docutils literal notranslate"><span class="pre">DQN_Agent.best_act_cont()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.dqn_agent.DQN_Agent.best_act_discrete"><code class="docutils literal notranslate"><span class="pre">DQN_Agent.best_act_discrete()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.dqn_agent.DQN_Agent.save_agent"><code class="docutils literal notranslate"><span class="pre">DQN_Agent.save_agent()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.dqn_agent.DQN_Agent.load_agent"><code class="docutils literal notranslate"><span class="pre">DQN_Agent.load_agent()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.dqn_agent.DQN_Agent.act_base"><code class="docutils literal notranslate"><span class="pre">DQN_Agent.act_base()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.dqn_agent.DQN_Agent.act"><code class="docutils literal notranslate"><span class="pre">DQN_Agent.act()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.dqn_agent.DQN_Agent.reset_rnn_hidden"><code class="docutils literal notranslate"><span class="pre">DQN_Agent.reset_rnn_hidden()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.dqn_agent.DQN_Agent.update_policy"><code class="docutils literal notranslate"><span class="pre">DQN_Agent.update_policy()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.dqn_agent.DQN_Agent.__abstractmethods__"><code class="docutils literal notranslate"><span class="pre">DQN_Agent.__abstractmethods__</span></code></a></li>
@@ -150,12 +145,12 @@
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ddpg_agent.DDPG_Agent.__init__"><code class="docutils literal notranslate"><span class="pre">DDPG_Agent.__init__()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ddpg_agent.DDPG_Agent.setup_models"><code class="docutils literal notranslate"><span class="pre">DDPG_Agent.setup_models()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ddpg_agent.DDPG_Agent.get_models_input_output_shape"><code class="docutils literal notranslate"><span class="pre">DDPG_Agent.get_models_input_output_shape()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ddpg_agent.DDPG_Agent.check_action_space"><code class="docutils literal notranslate"><span class="pre">DDPG_Agent.check_action_space()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ddpg_agent.DDPG_Agent.set_train_mode"><code class="docutils literal notranslate"><span class="pre">DDPG_Agent.set_train_mode()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ddpg_agent.DDPG_Agent.set_eval_mode"><code class="docutils literal notranslate"><span class="pre">DDPG_Agent.set_eval_mode()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ddpg_agent.DDPG_Agent.hard_target_update"><code class="docutils literal notranslate"><span class="pre">DDPG_Agent.hard_target_update()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ddpg_agent.DDPG_Agent.soft_target_update"><code class="docutils literal notranslate"><span class="pre">DDPG_Agent.soft_target_update()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ddpg_agent.DDPG_Agent.best_act_cont"><code class="docutils literal notranslate"><span class="pre">DDPG_Agent.best_act_cont()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ddpg_agent.DDPG_Agent.best_act_discrete"><code class="docutils literal notranslate"><span class="pre">DDPG_Agent.best_act_discrete()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ddpg_agent.DDPG_Agent.best_act"><code class="docutils literal notranslate"><span class="pre">DDPG_Agent.best_act()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ddpg_agent.DDPG_Agent.reset_rnn_hidden"><code class="docutils literal notranslate"><span class="pre">DDPG_Agent.reset_rnn_hidden()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ddpg_agent.DDPG_Agent.save_agent"><code class="docutils literal notranslate"><span class="pre">DDPG_Agent.save_agent()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ddpg_agent.DDPG_Agent.load_agent"><code class="docutils literal notranslate"><span class="pre">DDPG_Agent.load_agent()</span></code></a></li>
@@ -182,15 +177,16 @@
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ppo_agent.PPO_Agent.load_agent"><code class="docutils literal notranslate"><span class="pre">PPO_Agent.load_agent()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ppo_agent.PPO_Agent.reset_rnn_hidden"><code class="docutils literal notranslate"><span class="pre">PPO_Agent.reset_rnn_hidden()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ppo_agent.PPO_Agent.set_num_parallel_env"><code class="docutils literal notranslate"><span class="pre">PPO_Agent.set_num_parallel_env()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ppo_agent.PPO_Agent.best_act"><code class="docutils literal notranslate"><span class="pre">PPO_Agent.best_act()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ppo_agent.PPO_Agent.best_act_discrete"><code class="docutils literal notranslate"><span class="pre">PPO_Agent.best_act_discrete()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ppo_agent.PPO_Agent.best_act_cont"><code class="docutils literal notranslate"><span class="pre">PPO_Agent.best_act_cont()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ppo_agent.PPO_Agent.act"><code class="docutils literal notranslate"><span class="pre">PPO_Agent.act()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ppo_agent.PPO_Agent._get_ppo_experiences"><code class="docutils literal notranslate"><span class="pre">PPO_Agent._get_ppo_experiences()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ppo_agent.PPO_Agent.update_policy"><code class="docutils literal notranslate"><span class="pre">PPO_Agent.update_policy()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ppo_agent.PPO_Agent.__abstractmethods__"><code class="docutils literal notranslate"><span class="pre">PPO_Agent.__abstractmethods__</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ppo_agent.PPO_Agent.__annotations__"><code class="docutils literal notranslate"><span class="pre">PPO_Agent.__annotations__</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ppo_agent.PPO_Agent.__module__"><code class="docutils literal notranslate"><span class="pre">PPO_Agent.__module__</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ppo_agent.PPO_Agent._abc_impl"><code class="docutils literal notranslate"><span class="pre">PPO_Agent._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.ppo_agent.PPO_Agent.update_policy"><code class="docutils literal notranslate"><span class="pre">PPO_Agent.update_policy()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -200,12 +196,13 @@
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.heuristic_agent.Heuristic_Agent.__init__"><code class="docutils literal notranslate"><span class="pre">Heuristic_Agent.__init__()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.heuristic_agent.Heuristic_Agent.setup_models"><code class="docutils literal notranslate"><span class="pre">Heuristic_Agent.setup_models()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.heuristic_agent.Heuristic_Agent.get_models_input_output_shape"><code class="docutils literal notranslate"><span class="pre">Heuristic_Agent.get_models_input_output_shape()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.heuristic_agent.Heuristic_Agent.set_train_mode"><code class="docutils literal notranslate"><span class="pre">Heuristic_Agent.set_train_mode()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.heuristic_agent.Heuristic_Agent.set_eval_mode"><code class="docutils literal notranslate"><span class="pre">Heuristic_Agent.set_eval_mode()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.heuristic_agent.Heuristic_Agent.save_agent"><code class="docutils literal notranslate"><span class="pre">Heuristic_Agent.save_agent()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.heuristic_agent.Heuristic_Agent.load_agent"><code class="docutils literal notranslate"><span class="pre">Heuristic_Agent.load_agent()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.heuristic_agent.Heuristic_Agent.train"><code class="docutils literal notranslate"><span class="pre">Heuristic_Agent.train()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.heuristic_agent.Heuristic_Agent.act"><code class="docutils literal notranslate"><span class="pre">Heuristic_Agent.act()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.heuristic_agent.Heuristic_Agent.best_act_discrete"><code class="docutils literal notranslate"><span class="pre">Heuristic_Agent.best_act_discrete()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.heuristic_agent.Heuristic_Agent.best_act_cont"><code class="docutils literal notranslate"><span class="pre">Heuristic_Agent.best_act_cont()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.agents.heuristic_agent.Heuristic_Agent.best_act"><code class="docutils literal notranslate"><span class="pre">Heuristic_Agent.best_act()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.heuristic_agent.Heuristic_Agent.reset_rnn_hidden"><code class="docutils literal notranslate"><span class="pre">Heuristic_Agent.reset_rnn_hidden()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.heuristic_agent.Heuristic_Agent.update_policy"><code class="docutils literal notranslate"><span class="pre">Heuristic_Agent.update_policy()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.agents.heuristic_agent.Heuristic_Agent.get_last_collected_experiences"><code class="docutils literal notranslate"><span class="pre">Heuristic_Agent.get_last_collected_experiences()</span></code></a></li>
@@ -706,26 +703,9 @@ Returns: a dictionary containing the agent’s state.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="rlify.agents.drl_agent.RL_Agent.best_act_discrete">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">best_act_discrete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.drl_agent.RL_Agent.best_act_discrete" title="Link to this definition"></a></dt>
-<dd><p>The best actions in a discrete action space</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>observations</strong> – The observations to act on</p></li>
-<li><p><strong>num_obs</strong> – The number of observations to act on</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The highest probabilty action to be taken in a detrministic way</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="rlify.agents.drl_agent.RL_Agent.best_act_cont">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">best_act_cont</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.drl_agent.RL_Agent.best_act_cont" title="Link to this definition"></a></dt>
-<dd><p>The best actions in a continiuos action space</p>
+<dt class="sig sig-object py" id="rlify.agents.drl_agent.RL_Agent.best_act">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">best_act</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.drl_agent.RL_Agent.best_act" title="Link to this definition"></a></dt>
+<dd><p>The highest probabilities actions in a detrminstic way</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -854,32 +834,6 @@ this callback is called in many places so please impliment it in you agent</p>
 <dd><p>clears the experience replay buffer</p>
 </dd></dl>
 
-<dl class="py attribute">
-<dt class="sig sig-object py" id="rlify.agents.drl_agent.RL_Agent.__abstractmethods__">
-<span class="sig-name descname"><span class="pre">__abstractmethods__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">frozenset({'act',</span> <span class="pre">'best_act_cont',</span> <span class="pre">'best_act_discrete',</span> <span class="pre">'get_models_input_output_shape',</span> <span class="pre">'load_agent',</span> <span class="pre">'reset_rnn_hidden',</span> <span class="pre">'save_agent',</span> <span class="pre">'set_eval_mode',</span> <span class="pre">'set_train_mode',</span> <span class="pre">'setup_models',</span> <span class="pre">'update_policy'})</span></em><a class="headerlink" href="#rlify.agents.drl_agent.RL_Agent.__abstractmethods__" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="rlify.agents.drl_agent.RL_Agent.__dict__">
-<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'rlify.agents.drl_agent',</span> <span class="pre">'__doc__':</span> <span class="pre">'\n</span>&#160;&#160;&#160; <span class="pre">RL_Agent</span> <span class="pre">is</span> <span class="pre">an</span> <span class="pre">abstract</span> <span class="pre">class</span> <span class="pre">that</span> <span class="pre">defines</span> <span class="pre">the</span> <span class="pre">basic</span> <span class="pre">structure</span> <span class="pre">of</span> <span class="pre">an</span> <span class="pre">RL</span> <span class="pre">agent.\n</span>&#160;&#160;&#160; <span class="pre">It</span> <span class="pre">is</span> <span class="pre">used</span> <span class="pre">as</span> <span class="pre">a</span> <span class="pre">base</span> <span class="pre">class</span> <span class="pre">for</span> <span class="pre">all</span> <span class="pre">RL</span> <span class="pre">agents.\n</span>&#160;&#160;&#160; <span class="pre">',</span> <span class="pre">'TRAIN':</span> <span class="pre">0,</span> <span class="pre">'EVAL':</span> <span class="pre">1,</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.__init__&gt;,</span> <span class="pre">'init_tb_writer':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.init_tb_writer&gt;,</span> <span class="pre">'get_models_input_output_shape':</span> <span class="pre">&lt;staticmethod(&lt;function</span> <span class="pre">RL_Agent.get_models_input_output_shape&gt;)&gt;,</span> <span class="pre">'setup_models':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.setup_models&gt;,</span> <span class="pre">'update_policy':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.update_policy&gt;,</span> <span class="pre">'get_train_metrics':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.get_train_metrics&gt;,</span> <span class="pre">'read_obs_space_properties':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.read_obs_space_properties&gt;,</span> <span class="pre">'read_action_space_properties':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.read_action_space_properties&gt;,</span> <span class="pre">'define_action_space':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.define_action_space&gt;,</span> <span class="pre">'__del__':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.__del__&gt;,</span> <span class="pre">'save_agent':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.save_agent&gt;,</span> <span class="pre">'load_agent':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.load_agent&gt;,</span> <span class="pre">'set_train_mode':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.set_train_mode&gt;,</span> <span class="pre">'set_eval_mode':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.set_eval_mode&gt;,</span> <span class="pre">'train_episodial':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.train_episodial&gt;,</span> <span class="pre">'train_n_steps':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.train_n_steps&gt;,</span> <span class="pre">'_train_n_iters':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent._train_n_iters&gt;,</span> <span class="pre">'set_num_parallel_env':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.set_num_parallel_env&gt;,</span> <span class="pre">'act':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.act&gt;,</span> <span class="pre">'load_highest_score_agent':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.load_highest_score_agent&gt;,</span> <span class="pre">'get_highest_score_agent_ckpt_path':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.get_highest_score_agent_ckpt_path&gt;,</span> <span class="pre">'best_act_discrete':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.best_act_discrete&gt;,</span> <span class="pre">'best_act_cont':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.best_act_cont&gt;,</span> <span class="pre">'norm_obs':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.norm_obs&gt;,</span> <span class="pre">'pre_process_obs_for_act':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.pre_process_obs_for_act&gt;,</span> <span class="pre">'return_correct_actions_dim':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.return_correct_actions_dim&gt;,</span> <span class="pre">'close_env_procs':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.close_env_procs&gt;,</span> <span class="pre">'set_intrisic_reward_func':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.set_intrisic_reward_func&gt;,</span> <span class="pre">'intrisic_reward_func':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.intrisic_reward_func&gt;,</span> <span class="pre">'collect_episode_obs':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.collect_episode_obs&gt;,</span> <span class="pre">'reset_rnn_hidden':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.reset_rnn_hidden&gt;,</span> <span class="pre">'get_last_collected_experiences':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.get_last_collected_experiences&gt;,</span> <span class="pre">'clear_exp':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.clear_exp&gt;,</span> <span class="pre">'run_env':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.run_env&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'RL_Agent'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'RL_Agent'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__abstractmethods__':</span> <span class="pre">frozenset({'best_act_discrete',</span> <span class="pre">'save_agent',</span> <span class="pre">'load_agent',</span> <span class="pre">'set_train_mode',</span> <span class="pre">'update_policy',</span> <span class="pre">'setup_models',</span> <span class="pre">'get_models_input_output_shape',</span> <span class="pre">'act',</span> <span class="pre">'set_eval_mode',</span> <span class="pre">'best_act_cont',</span> <span class="pre">'reset_rnn_hidden'}),</span> <span class="pre">'_abc_impl':</span> <span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;,</span> <span class="pre">'__annotations__':</span> <span class="pre">{}})</span></em><a class="headerlink" href="#rlify.agents.drl_agent.RL_Agent.__dict__" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="rlify.agents.drl_agent.RL_Agent.__module__">
-<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'rlify.agents.drl_agent'</span></em><a class="headerlink" href="#rlify.agents.drl_agent.RL_Agent.__module__" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="rlify.agents.drl_agent.RL_Agent.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#rlify.agents.drl_agent.RL_Agent.__weakref__" title="Link to this definition"></a></dt>
-<dd><p>list of weak references to the object</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="rlify.agents.drl_agent.RL_Agent._abc_impl">
-<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#rlify.agents.drl_agent.RL_Agent._abc_impl" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
 <dl class="py method">
 <dt class="sig sig-object py" id="rlify.agents.drl_agent.RL_Agent.run_env">
 <span class="sig-name descname"><span class="pre">run_env</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">env</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">best_act</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_runs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.drl_agent.RL_Agent.run_env" title="Link to this definition"></a></dt>
@@ -899,6 +853,32 @@ this callback is called in many places so please impliment it in you agent</p>
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.agents.drl_agent.RL_Agent.__abstractmethods__">
+<span class="sig-name descname"><span class="pre">__abstractmethods__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">frozenset({'act',</span> <span class="pre">'best_act',</span> <span class="pre">'get_models_input_output_shape',</span> <span class="pre">'load_agent',</span> <span class="pre">'reset_rnn_hidden',</span> <span class="pre">'save_agent',</span> <span class="pre">'set_eval_mode',</span> <span class="pre">'set_train_mode',</span> <span class="pre">'setup_models',</span> <span class="pre">'update_policy'})</span></em><a class="headerlink" href="#rlify.agents.drl_agent.RL_Agent.__abstractmethods__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.agents.drl_agent.RL_Agent.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'rlify.agents.drl_agent',</span> <span class="pre">'__doc__':</span> <span class="pre">'\n</span>&#160;&#160;&#160; <span class="pre">RL_Agent</span> <span class="pre">is</span> <span class="pre">an</span> <span class="pre">abstract</span> <span class="pre">class</span> <span class="pre">that</span> <span class="pre">defines</span> <span class="pre">the</span> <span class="pre">basic</span> <span class="pre">structure</span> <span class="pre">of</span> <span class="pre">an</span> <span class="pre">RL</span> <span class="pre">agent.\n</span>&#160;&#160;&#160; <span class="pre">It</span> <span class="pre">is</span> <span class="pre">used</span> <span class="pre">as</span> <span class="pre">a</span> <span class="pre">base</span> <span class="pre">class</span> <span class="pre">for</span> <span class="pre">all</span> <span class="pre">RL</span> <span class="pre">agents.\n</span>&#160;&#160;&#160; <span class="pre">',</span> <span class="pre">'TRAIN':</span> <span class="pre">0,</span> <span class="pre">'EVAL':</span> <span class="pre">1,</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.__init__&gt;,</span> <span class="pre">'init_tb_writer':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.init_tb_writer&gt;,</span> <span class="pre">'get_models_input_output_shape':</span> <span class="pre">&lt;staticmethod(&lt;function</span> <span class="pre">RL_Agent.get_models_input_output_shape&gt;)&gt;,</span> <span class="pre">'setup_models':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.setup_models&gt;,</span> <span class="pre">'update_policy':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.update_policy&gt;,</span> <span class="pre">'get_train_metrics':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.get_train_metrics&gt;,</span> <span class="pre">'read_obs_space_properties':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.read_obs_space_properties&gt;,</span> <span class="pre">'read_action_space_properties':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.read_action_space_properties&gt;,</span> <span class="pre">'define_action_space':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.define_action_space&gt;,</span> <span class="pre">'__del__':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.__del__&gt;,</span> <span class="pre">'save_agent':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.save_agent&gt;,</span> <span class="pre">'load_agent':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.load_agent&gt;,</span> <span class="pre">'set_train_mode':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.set_train_mode&gt;,</span> <span class="pre">'set_eval_mode':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.set_eval_mode&gt;,</span> <span class="pre">'train_episodial':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.train_episodial&gt;,</span> <span class="pre">'train_n_steps':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.train_n_steps&gt;,</span> <span class="pre">'_train_n_iters':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent._train_n_iters&gt;,</span> <span class="pre">'set_num_parallel_env':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.set_num_parallel_env&gt;,</span> <span class="pre">'act':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.act&gt;,</span> <span class="pre">'load_highest_score_agent':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.load_highest_score_agent&gt;,</span> <span class="pre">'get_highest_score_agent_ckpt_path':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.get_highest_score_agent_ckpt_path&gt;,</span> <span class="pre">'best_act':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.best_act&gt;,</span> <span class="pre">'norm_obs':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.norm_obs&gt;,</span> <span class="pre">'pre_process_obs_for_act':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.pre_process_obs_for_act&gt;,</span> <span class="pre">'return_correct_actions_dim':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.return_correct_actions_dim&gt;,</span> <span class="pre">'close_env_procs':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.close_env_procs&gt;,</span> <span class="pre">'set_intrisic_reward_func':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.set_intrisic_reward_func&gt;,</span> <span class="pre">'intrisic_reward_func':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.intrisic_reward_func&gt;,</span> <span class="pre">'collect_episode_obs':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.collect_episode_obs&gt;,</span> <span class="pre">'reset_rnn_hidden':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.reset_rnn_hidden&gt;,</span> <span class="pre">'get_last_collected_experiences':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.get_last_collected_experiences&gt;,</span> <span class="pre">'clear_exp':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.clear_exp&gt;,</span> <span class="pre">'run_env':</span> <span class="pre">&lt;function</span> <span class="pre">RL_Agent.run_env&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'RL_Agent'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'RL_Agent'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__abstractmethods__':</span> <span class="pre">frozenset({'save_agent',</span> <span class="pre">'get_models_input_output_shape',</span> <span class="pre">'set_eval_mode',</span> <span class="pre">'reset_rnn_hidden',</span> <span class="pre">'update_policy',</span> <span class="pre">'act',</span> <span class="pre">'set_train_mode',</span> <span class="pre">'setup_models',</span> <span class="pre">'best_act',</span> <span class="pre">'load_agent'}),</span> <span class="pre">'_abc_impl':</span> <span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;,</span> <span class="pre">'__annotations__':</span> <span class="pre">{}})</span></em><a class="headerlink" href="#rlify.agents.drl_agent.RL_Agent.__dict__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.agents.drl_agent.RL_Agent.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'rlify.agents.drl_agent'</span></em><a class="headerlink" href="#rlify.agents.drl_agent.RL_Agent.__module__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.agents.drl_agent.RL_Agent.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#rlify.agents.drl_agent.RL_Agent.__weakref__" title="Link to this definition"></a></dt>
+<dd><p>list of weak references to the object</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rlify.agents.drl_agent.RL_Agent._abc_impl">
+<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#rlify.agents.drl_agent.RL_Agent._abc_impl" title="Link to this definition"></a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
@@ -940,6 +920,11 @@ this callback is called in many places so please impliment it in you agent</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="rlify.agents.vdqn_agent.VDQN_Agent.check_action_space">
+<span class="sig-name descname"><span class="pre">check_action_space</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.vdqn_agent.VDQN_Agent.check_action_space" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="rlify.agents.vdqn_agent.VDQN_Agent.setup_models">
 <span class="sig-name descname"><span class="pre">setup_models</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.vdqn_agent.VDQN_Agent.setup_models" title="Link to this definition"></a></dt>
 <dd><p>Initializes the Q Model and optimizer.</p>
@@ -976,26 +961,9 @@ this callback is called in many places so please impliment it in you agent</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="rlify.agents.vdqn_agent.VDQN_Agent.best_act_cont">
-<span class="sig-name descname"><span class="pre">best_act_cont</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.vdqn_agent.VDQN_Agent.best_act_cont" title="Link to this definition"></a></dt>
-<dd><p>The best actions in a continiuos action space</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>observations</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">array</span></code></span>) – The observations to act on</p></li>
-<li><p><strong>num_obs</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></span>) – The number of observations to act on</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The highest probabilty action to be taken in a detrministic way</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="rlify.agents.vdqn_agent.VDQN_Agent.best_act_discrete">
-<span class="sig-name descname"><span class="pre">best_act_discrete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.vdqn_agent.VDQN_Agent.best_act_discrete" title="Link to this definition"></a></dt>
-<dd><p>The best actions in a discrete action space</p>
+<dt class="sig sig-object py" id="rlify.agents.vdqn_agent.VDQN_Agent.best_act">
+<span class="sig-name descname"><span class="pre">best_act</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.vdqn_agent.VDQN_Agent.best_act" title="Link to this definition"></a></dt>
+<dd><p>The highest probabilities actions in a detrminstic way</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -1218,40 +1186,6 @@ this callback is called in many places so please impliment it in you agent</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="rlify.agents.dqn_agent.DQN_Agent.best_act_cont">
-<span class="sig-name descname"><span class="pre">best_act_cont</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.dqn_agent.DQN_Agent.best_act_cont" title="Link to this definition"></a></dt>
-<dd><p>The best actions in a continiuos action space</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>observations</strong> – The observations to act on</p></li>
-<li><p><strong>num_obs</strong> – The number of observations to act on</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The highest probabilty action to be taken in a detrministic way</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="rlify.agents.dqn_agent.DQN_Agent.best_act_discrete">
-<span class="sig-name descname"><span class="pre">best_act_discrete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.dqn_agent.DQN_Agent.best_act_discrete" title="Link to this definition"></a></dt>
-<dd><p>The best actions in a discrete action space</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>observations</strong> – The observations to act on</p></li>
-<li><p><strong>num_obs</strong> – The number of observations to act on</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The highest probabilty action to be taken in a detrministic way</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
 <dt class="sig sig-object py" id="rlify.agents.dqn_agent.DQN_Agent.save_agent">
 <span class="sig-name descname"><span class="pre">save_agent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.dqn_agent.DQN_Agent.save_agent" title="Link to this definition"></a></dt>
 <dd><p>Saves the agent to a file.</p>
@@ -1271,42 +1205,6 @@ this callback is called in many places so please impliment it in you agent</p>
 <span class="sig-name descname"><span class="pre">load_agent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.dqn_agent.DQN_Agent.load_agent" title="Link to this definition"></a></dt>
 <dd><p>Loads the agent from a file.
 Returns: a dictionary containing the agent’s state.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="rlify.agents.dqn_agent.DQN_Agent.act_base">
-<span class="sig-name descname"><span class="pre">act_base</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.dqn_agent.DQN_Agent.act_base" title="Link to this definition"></a></dt>
-<dd><p>Returns the Q values for the given observations.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>observations</strong> (<em>np.array</em>) – The observations.</p></li>
-<li><p><strong>num_obs</strong> (<em>int</em><em>, </em><em>optional</em>) – The number of observations. Defaults to 1.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The Q values (torch.tensor)</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="rlify.agents.dqn_agent.DQN_Agent.act">
-<span class="sig-name descname"><span class="pre">act</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.dqn_agent.DQN_Agent.act" title="Link to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>observations</strong> – The observations to act on</p></li>
-<li><p><strong>num_obs</strong> – The number of observations to act on</p></li>
-</ul>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></span></p>
-</dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The selected actions (np.ndarray)</p>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -1350,12 +1248,12 @@ Using the DQN algorithm.</p>
 <span id="rlify-agents-ddpg-agent-module"></span><h2>rlify.agents.ddpg_agent module<a class="headerlink" href="#module-rlify.agents.ddpg_agent" title="Link to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="rlify.agents.ddpg_agent.DDPG_Agent">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rlify.agents.ddpg_agent.</span></span><span class="sig-name descname"><span class="pre">DDPG_Agent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Q_mle_model</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.ddpg_agent.DDPG_Agent" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rlify.agents.ddpg_agent.</span></span><span class="sig-name descname"><span class="pre">DDPG_Agent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Q_mle_model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_update</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'soft[tau=0.05]'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.ddpg_agent.DDPG_Agent" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="#rlify.agents.dqn_agent.DQN_Agent" title="rlify.agents.dqn_agent.DQN_Agent"><code class="xref py py-class docutils literal notranslate"><span class="pre">DQN_Agent</span></code></a></p>
 <p>DQN Agent</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="rlify.agents.ddpg_agent.DDPG_Agent.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Q_mle_model</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.ddpg_agent.DDPG_Agent.__init__" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Q_mle_model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_update</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'soft[tau=0.05]'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.ddpg_agent.DDPG_Agent.__init__" title="Link to this definition"></a></dt>
 <dd><p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">env_name</span> <span class="o">=</span> <span class="s2">&quot;CartPole-v1&quot;</span>
 <span class="n">env</span> <span class="o">=</span> <span class="n">gym</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="n">env_name</span><span class="p">,</span> <span class="n">render_mode</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
@@ -1405,6 +1303,11 @@ Using the DQN algorithm.</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="rlify.agents.ddpg_agent.DDPG_Agent.check_action_space">
+<span class="sig-name descname"><span class="pre">check_action_space</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.ddpg_agent.DDPG_Agent.check_action_space" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="rlify.agents.ddpg_agent.DDPG_Agent.set_train_mode">
 <span class="sig-name descname"><span class="pre">set_train_mode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.ddpg_agent.DDPG_Agent.set_train_mode" title="Link to this definition"></a></dt>
 <dd><p>sets the agent to train mode - all models are set to train mode</p>
@@ -1434,41 +1337,18 @@ Using the DQN algorithm.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="rlify.agents.ddpg_agent.DDPG_Agent.best_act_cont">
-<span class="sig-name descname"><span class="pre">best_act_cont</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.ddpg_agent.DDPG_Agent.best_act_cont" title="Link to this definition"></a></dt>
-<dd><p>The best actions in a continiuos action space</p>
+<dt class="sig sig-object py" id="rlify.agents.ddpg_agent.DDPG_Agent.best_act">
+<span class="sig-name descname"><span class="pre">best_act</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.ddpg_agent.DDPG_Agent.best_act" title="Link to this definition"></a></dt>
+<dd><p>The highest probabilities actions in a detrminstic way</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>observations</strong> (<span class="sphinx_autodoc_typehints-type">[&lt;built-in function array&gt;, &lt;built-in method tensor of type object at 0x7fc2ed5957c0&gt;]</span>) – The observations to act on</p></li>
-<li><p><strong>num_obs</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></span>) – The number of observations to act on</p></li>
+<li><p><strong>observations</strong> – The observations to act on</p></li>
+<li><p><strong>num_obs</strong> – The number of observations to act on</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">array</span></code></span></p>
-</dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The highest probabilty action to be taken in a detrministic way</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="rlify.agents.ddpg_agent.DDPG_Agent.best_act_discrete">
-<span class="sig-name descname"><span class="pre">best_act_discrete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.ddpg_agent.DDPG_Agent.best_act_discrete" title="Link to this definition"></a></dt>
-<dd><p>The best actions in a discrete action space</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>observations</strong> (<span class="sphinx_autodoc_typehints-type">[&lt;built-in function array&gt;, &lt;built-in method tensor of type object at 0x7fc2ed5957c0&gt;]</span>) – The observations to act on</p></li>
-<li><p><strong>num_obs</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></span>) – The number of observations to act on</p></li>
-</ul>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">array</span></code></span></p>
-</dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The highest probabilty action to be taken in a detrministic way</p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The highest probabilty action to be taken in a detrministic way</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1550,7 +1430,7 @@ Returns: a dictionary containing the agent’s state.</p>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>observations</strong> (<span class="sphinx_autodoc_typehints-type">[&lt;built-in function array&gt;]</span>) – The observations to act on</p></li>
+<li><p><strong>observations</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">array</span></code></span>) – The observations to act on</p></li>
 <li><p><strong>num_obs</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></span>) – The number of observations to act on</p></li>
 </ul>
 </dd>
@@ -1701,9 +1581,9 @@ this callback is called in many places so please impliment it in you agent</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="rlify.agents.ppo_agent.PPO_Agent.best_act_discrete">
-<span class="sig-name descname"><span class="pre">best_act_discrete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.ppo_agent.PPO_Agent.best_act_discrete" title="Link to this definition"></a></dt>
-<dd><p>The best actions in a discrete action space</p>
+<dt class="sig sig-object py" id="rlify.agents.ppo_agent.PPO_Agent.best_act">
+<span class="sig-name descname"><span class="pre">best_act</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.ppo_agent.PPO_Agent.best_act" title="Link to this definition"></a></dt>
+<dd><p>The highest probabilities actions in a detrminstic way</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -1718,21 +1598,14 @@ this callback is called in many places so please impliment it in you agent</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="rlify.agents.ppo_agent.PPO_Agent.best_act_discrete">
+<span class="sig-name descname"><span class="pre">best_act_discrete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.ppo_agent.PPO_Agent.best_act_discrete" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="rlify.agents.ppo_agent.PPO_Agent.best_act_cont">
 <span class="sig-name descname"><span class="pre">best_act_cont</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.ppo_agent.PPO_Agent.best_act_cont" title="Link to this definition"></a></dt>
-<dd><p>The best actions in a continiuos action space</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>observations</strong> – The observations to act on</p></li>
-<li><p><strong>num_obs</strong> – The number of observations to act on</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The highest probabilty action to be taken in a detrministic way</p>
-</dd>
-</dl>
-</dd></dl>
+<dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="rlify.agents.ppo_agent.PPO_Agent.act">
@@ -1756,13 +1629,6 @@ this callback is called in many places so please impliment it in you agent</p>
 <dd><p>Current PPO only suports random_Samples = False!!</p>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="rlify.agents.ppo_agent.PPO_Agent.update_policy">
-<span class="sig-name descname"><span class="pre">update_policy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.ppo_agent.PPO_Agent.update_policy" title="Link to this definition"></a></dt>
-<dd><p>Update the policy network.
-Args: exp (tuple): Experience tuple.</p>
-</dd></dl>
-
 <dl class="py attribute">
 <dt class="sig sig-object py" id="rlify.agents.ppo_agent.PPO_Agent.__abstractmethods__">
 <span class="sig-name descname"><span class="pre">__abstractmethods__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">frozenset({})</span></em><a class="headerlink" href="#rlify.agents.ppo_agent.PPO_Agent.__abstractmethods__" title="Link to this definition"></a></dt>
@@ -1782,6 +1648,13 @@ Args: exp (tuple): Experience tuple.</p>
 <dt class="sig sig-object py" id="rlify.agents.ppo_agent.PPO_Agent._abc_impl">
 <span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#rlify.agents.ppo_agent.PPO_Agent._abc_impl" title="Link to this definition"></a></dt>
 <dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rlify.agents.ppo_agent.PPO_Agent.update_policy">
+<span class="sig-name descname"><span class="pre">update_policy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.ppo_agent.PPO_Agent.update_policy" title="Link to this definition"></a></dt>
+<dd><p>Update the policy network.
+Args: exp (tuple): Experience tuple.</p>
+</dd></dl>
 
 </dd></dl>
 
@@ -1838,6 +1711,18 @@ Please check more ObsWraper for  more info on the observation input object</p></
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="rlify.agents.heuristic_agent.Heuristic_Agent.set_train_mode">
+<span class="sig-name descname"><span class="pre">set_train_mode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.heuristic_agent.Heuristic_Agent.set_train_mode" title="Link to this definition"></a></dt>
+<dd><p>sets the agent to train mode - all models are set to train mode</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rlify.agents.heuristic_agent.Heuristic_Agent.set_eval_mode">
+<span class="sig-name descname"><span class="pre">set_eval_mode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.heuristic_agent.Heuristic_Agent.set_eval_mode" title="Link to this definition"></a></dt>
+<dd><p>sets the agent to train mode - all models are set to eval mode</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="rlify.agents.heuristic_agent.Heuristic_Agent.save_agent">
 <span class="sig-name descname"><span class="pre">save_agent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.heuristic_agent.Heuristic_Agent.save_agent" title="Link to this definition"></a></dt>
 <dd><p>Saves the agent to a file.</p>
@@ -1881,26 +1766,9 @@ Returns: a dictionary containing the agent’s state.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="rlify.agents.heuristic_agent.Heuristic_Agent.best_act_discrete">
-<span class="sig-name descname"><span class="pre">best_act_discrete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.heuristic_agent.Heuristic_Agent.best_act_discrete" title="Link to this definition"></a></dt>
-<dd><p>The best actions in a discrete action space</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>observations</strong> – The observations to act on</p></li>
-<li><p><strong>num_obs</strong> – The number of observations to act on</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The highest probabilty action to be taken in a detrministic way</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="rlify.agents.heuristic_agent.Heuristic_Agent.best_act_cont">
-<span class="sig-name descname"><span class="pre">best_act_cont</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.heuristic_agent.Heuristic_Agent.best_act_cont" title="Link to this definition"></a></dt>
-<dd><p>The best actions in a continiuos action space</p>
+<dt class="sig sig-object py" id="rlify.agents.heuristic_agent.Heuristic_Agent.best_act">
+<span class="sig-name descname"><span class="pre">best_act</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.agents.heuristic_agent.Heuristic_Agent.best_act" title="Link to this definition"></a></dt>
+<dd><p>The highest probabilities actions in a detrminstic way</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -1940,7 +1808,7 @@ Returns: a dictionary containing the agent’s state.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="rlify.agents.heuristic_agent.Heuristic_Agent.__abstractmethods__">
-<span class="sig-name descname"><span class="pre">__abstractmethods__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">frozenset({'set_eval_mode',</span> <span class="pre">'set_train_mode'})</span></em><a class="headerlink" href="#rlify.agents.heuristic_agent.Heuristic_Agent.__abstractmethods__" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">__abstractmethods__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">frozenset({})</span></em><a class="headerlink" href="#rlify.agents.heuristic_agent.Heuristic_Agent.__abstractmethods__" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
