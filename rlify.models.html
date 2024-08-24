@@ -53,7 +53,6 @@
 <li class="toctree-l4"><a class="reference internal" href="#rlify.models.base_model.BaseModel.is_rnn"><code class="docutils literal notranslate"><span class="pre">BaseModel.is_rnn</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.models.base_model.BaseModel.__init__"><code class="docutils literal notranslate"><span class="pre">BaseModel.__init__()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.models.base_model.BaseModel.get_total_params"><code class="docutils literal notranslate"><span class="pre">BaseModel.get_total_params()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rlify.models.base_model.BaseModel.__init_subclass__"><code class="docutils literal notranslate"><span class="pre">BaseModel.__init_subclass__()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.models.base_model.BaseModel.forward"><code class="docutils literal notranslate"><span class="pre">BaseModel.forward()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.models.base_model.BaseModel.reset"><code class="docutils literal notranslate"><span class="pre">BaseModel.reset()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.models.base_model.BaseModel.device"><code class="docutils literal notranslate"><span class="pre">BaseModel.device</span></code></a></li>
@@ -78,13 +77,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#module-rlify.models.model_factory">rlify.models.model_factory module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#rlify.models.model_factory.get_model_class"><code class="docutils literal notranslate"><span class="pre">get_model_class()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#rlify-models-model-factory-module">rlify.models.model_factory module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-rlify.models.rnn">rlify.models.rnn module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#rlify.models.rnn.pack_from_done_indices"><code class="docutils literal notranslate"><span class="pre">pack_from_done_indices()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#rlify.models.rnn.get_seqs_indices_for_pack"><code class="docutils literal notranslate"><span class="pre">get_seqs_indices_for_pack()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#rlify.models.rnn.ReccurentLayer"><code class="docutils literal notranslate"><span class="pre">ReccurentLayer</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.ReccurentLayer.is_rnn"><code class="docutils literal notranslate"><span class="pre">ReccurentLayer.is_rnn</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.ReccurentLayer.__init__"><code class="docutils literal notranslate"><span class="pre">ReccurentLayer.__init__()</span></code></a></li>
@@ -98,12 +92,12 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#rlify.models.rnn.GRU"><code class="docutils literal notranslate"><span class="pre">GRU</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.GRU.__init__"><code class="docutils literal notranslate"><span class="pre">GRU.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.GRU.forward"><code class="docutils literal notranslate"><span class="pre">GRU.forward()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.GRU.reset"><code class="docutils literal notranslate"><span class="pre">GRU.reset()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.GRU.__abstractmethods__"><code class="docutils literal notranslate"><span class="pre">GRU.__abstractmethods__</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.GRU.__annotations__"><code class="docutils literal notranslate"><span class="pre">GRU.__annotations__</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.GRU.__module__"><code class="docutils literal notranslate"><span class="pre">GRU.__module__</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.GRU._abc_impl"><code class="docutils literal notranslate"><span class="pre">GRU._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.GRU.forward"><code class="docutils literal notranslate"><span class="pre">GRU.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rlify.models.rnn.GRU.reset"><code class="docutils literal notranslate"><span class="pre">GRU.reset()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -170,16 +164,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="rlify.models.base_model.BaseModel.__init_subclass__">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__init_subclass__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.base_model.BaseModel.__init_subclass__" title="Link to this definition"></a></dt>
-<dd><p>This method is called when a class is subclassed.</p>
-<p>The default implementation does nothing. It may be
-overridden to extend subclasses.</p>
-</dd></dl>
-
-<dl class="py method">
 <dt class="sig sig-object py" id="rlify.models.base_model.BaseModel.forward">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dones</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.base_model.BaseModel.forward" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.base_model.BaseModel.forward" title="Link to this definition"></a></dt>
 <dd><p>Forward pass of the model</p>
 </dd></dl>
 
@@ -243,7 +229,7 @@ overridden to extend subclasses.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="rlify.models.fc.FC.forward">
-<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.fc.FC.forward" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.fc.FC.forward" title="Link to this definition"></a></dt>
 <dd><p>Forward pass of the model</p>
 </dd></dl>
 
@@ -276,29 +262,11 @@ overridden to extend subclasses.</p>
 </dd></dl>
 
 </section>
-<section id="module-rlify.models.model_factory">
-<span id="rlify-models-model-factory-module"></span><h2>rlify.models.model_factory module<a class="headerlink" href="#module-rlify.models.model_factory" title="Link to this heading"></a></h2>
-<dl class="py function">
-<dt class="sig sig-object py" id="rlify.models.model_factory.get_model_class">
-<span class="sig-prename descclassname"><span class="pre">rlify.models.model_factory.</span></span><span class="sig-name descname"><span class="pre">get_model_class</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.model_factory.get_model_class" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
+<section id="rlify-models-model-factory-module">
+<h2>rlify.models.model_factory module<a class="headerlink" href="#rlify-models-model-factory-module" title="Link to this heading"></a></h2>
 </section>
 <section id="module-rlify.models.rnn">
 <span id="rlify-models-rnn-module"></span><h2>rlify.models.rnn module<a class="headerlink" href="#module-rlify.models.rnn" title="Link to this heading"></a></h2>
-<dl class="py function">
-<dt class="sig sig-object py" id="rlify.models.rnn.pack_from_done_indices">
-<span class="sig-prename descclassname"><span class="pre">rlify.models.rnn.</span></span><span class="sig-name descname"><span class="pre">pack_from_done_indices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dones</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.rnn.pack_from_done_indices" title="Link to this definition"></a></dt>
-<dd><p>Packs the data from the done indices to torch.nn.utils.rnn.PackedSequence</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="rlify.models.rnn.get_seqs_indices_for_pack">
-<span class="sig-prename descclassname"><span class="pre">rlify.models.rnn.</span></span><span class="sig-name descname"><span class="pre">get_seqs_indices_for_pack</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">done_indices</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.rnn.get_seqs_indices_for_pack" title="Link to this definition"></a></dt>
-<dd><p>calculates the sequence indices for packing the data
-returns seq_lens, sorted_data_sub_indices</p>
-</dd></dl>
-
 <dl class="py class">
 <dt class="sig sig-object py" id="rlify.models.rnn.ReccurentLayer">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rlify.models.rnn.</span></span><span class="sig-name descname"><span class="pre">ReccurentLayer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_shape</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.rnn.ReccurentLayer" title="Link to this definition"></a></dt>
@@ -324,14 +292,11 @@ returns seq_lens, sorted_data_sub_indices</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="rlify.models.rnn.ReccurentLayer.forward">
-<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dones</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.rnn.ReccurentLayer.forward" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.rnn.ReccurentLayer.forward" title="Link to this definition"></a></dt>
 <dd><p>Forward pass of the model</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>x</strong> – PackedSequence: the input data</p></li>
-<li><p><strong>dones</strong> – torch.Tensor: the done indices</p></li>
-</ul>
+<dd class="field-odd"><p><strong>x</strong> – PackedSequence: the input data</p>
 </dd>
 </dl>
 </dd></dl>
@@ -384,26 +349,6 @@ returns seq_lens, sorted_data_sub_indices</p>
 </dl>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="rlify.models.rnn.GRU.forward">
-<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dones</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.rnn.GRU.forward" title="Link to this definition"></a></dt>
-<dd><p>Forward pass of the model</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>x</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">PackedSequence</span></code></span>) – PackedSequence: the input data</p></li>
-<li><p><strong>dones</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></span>) – torch.Tensor: the done indices</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="rlify.models.rnn.GRU.reset">
-<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.rnn.GRU.reset" title="Link to this definition"></a></dt>
-<dd><p>resets hidden state, if not rnn - can be just: pass</p>
-</dd></dl>
-
 <dl class="py attribute">
 <dt class="sig sig-object py" id="rlify.models.rnn.GRU.__abstractmethods__">
 <span class="sig-name descname"><span class="pre">__abstractmethods__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">frozenset({})</span></em><a class="headerlink" href="#rlify.models.rnn.GRU.__abstractmethods__" title="Link to this definition"></a></dt>
@@ -423,6 +368,23 @@ returns seq_lens, sorted_data_sub_indices</p>
 <dt class="sig sig-object py" id="rlify.models.rnn.GRU._abc_impl">
 <span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#rlify.models.rnn.GRU._abc_impl" title="Link to this definition"></a></dt>
 <dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rlify.models.rnn.GRU.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.rnn.GRU.forward" title="Link to this definition"></a></dt>
+<dd><p>Forward pass of the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></span>) – PackedSequence: the input data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rlify.models.rnn.GRU.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rlify.models.rnn.GRU.reset" title="Link to this definition"></a></dt>
+<dd><p>resets hidden state, if not rnn - can be just: pass</p>
+</dd></dl>
 
 </dd></dl>
 

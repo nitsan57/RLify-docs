@@ -96,15 +96,18 @@
  | <a href="#T"><strong>T</strong></a>
  | <a href="#U"><strong>U</strong></a>
  | <a href="#V"><strong>V</strong></a>
- | <a href="#W"><strong>W</strong></a>
  
 </div>
 <h2 id="_">_</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="rlify.agents.html#rlify.agents.ddpg_agent.DDPG_Agent.__abstractmethods__">__abstractmethods__ (rlify.agents.ddpg_agent.DDPG_Agent attribute)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.IData.__abstractmethods__">__abstractmethods__ (rlify.agents.agent_utils.IData attribute)</a>
 
       <ul>
+        <li><a href="rlify.agents.html#rlify.agents.agent_utils.LambdaData.__abstractmethods__">(rlify.agents.agent_utils.LambdaData attribute)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.ddpg_agent.DDPG_Agent.__abstractmethods__">(rlify.agents.ddpg_agent.DDPG_Agent attribute)</a>
+</li>
         <li><a href="rlify.agents.html#rlify.agents.dqn_agent.DQN_Agent.__abstractmethods__">(rlify.agents.dqn_agent.DQN_Agent attribute)</a>
 </li>
         <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.__abstractmethods__">(rlify.agents.drl_agent.RL_Agent attribute)</a>
@@ -119,6 +122,10 @@
 </li>
         <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPO_Agent.__abstractmethods__">(rlify.agents.ppo_agent.PPO_Agent attribute)</a>
 </li>
+        <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPOData.__abstractmethods__">(rlify.agents.ppo_agent.PPOData attribute)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.DQNData.__abstractmethods__">(rlify.agents.vdqn_agent.DQNData attribute)</a>
+</li>
         <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.VDQN_Agent.__abstractmethods__">(rlify.agents.vdqn_agent.VDQN_Agent attribute)</a>
 </li>
         <li><a href="rlify.models.html#rlify.models.base_model.BaseModel.__abstractmethods__">(rlify.models.base_model.BaseModel attribute)</a>
@@ -130,11 +137,15 @@
         <li><a href="rlify.models.html#rlify.models.rnn.ReccurentLayer.__abstractmethods__">(rlify.models.rnn.ReccurentLayer attribute)</a>
 </li>
       </ul></li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.__add__">__add__() (rlify.agents.agent_utils.ObsWraper method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.__add__">__add__() (rlify.agents.agent_utils.ObsWrapper method)</a>
 </li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ForgettingExperienceReplay.__annotations__">__annotations__ (rlify.agents.agent_utils.ForgettingExperienceReplay attribute)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.IData.__annotations__">__annotations__ (rlify.agents.agent_utils.IData attribute)</a>
 
       <ul>
+        <li><a href="rlify.agents.html#rlify.agents.agent_utils.LambdaData.__annotations__">(rlify.agents.agent_utils.LambdaData attribute)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.agent_utils.LambdaDataset.__annotations__">(rlify.agents.agent_utils.LambdaDataset attribute)</a>
+</li>
         <li><a href="rlify.agents.html#rlify.agents.ddpg_agent.DDPG_Agent.__annotations__">(rlify.agents.ddpg_agent.DDPG_Agent attribute)</a>
 </li>
         <li><a href="rlify.agents.html#rlify.agents.dqn_agent.DQN_Agent.__annotations__">(rlify.agents.dqn_agent.DQN_Agent attribute)</a>
@@ -149,6 +160,12 @@
 </li>
         <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPO_Agent.__annotations__">(rlify.agents.ppo_agent.PPO_Agent attribute)</a>
 </li>
+        <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPOData.__annotations__">(rlify.agents.ppo_agent.PPOData attribute)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPODataset.__annotations__">(rlify.agents.ppo_agent.PPODataset attribute)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.DQNData.__annotations__">(rlify.agents.vdqn_agent.DQNData attribute)</a>
+</li>
         <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.VDQN_Agent.__annotations__">(rlify.agents.vdqn_agent.VDQN_Agent attribute)</a>
 </li>
         <li><a href="rlify.models.html#rlify.models.base_model.BaseModel.__annotations__">(rlify.models.base_model.BaseModel attribute)</a>
@@ -160,32 +177,20 @@
         <li><a href="rlify.models.html#rlify.models.rnn.ReccurentLayer.__annotations__">(rlify.models.rnn.ReccurentLayer attribute)</a>
 </li>
       </ul></li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv.__del__">__del__() (rlify.agents.agent_utils.ParallelEnv method)</a>
-
-      <ul>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv_m.__del__">(rlify.agents.agent_utils.ParallelEnv_m method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.__del__">__del__() (rlify.agents.drl_agent.RL_Agent method)</a>
 </li>
-        <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.__del__">(rlify.agents.drl_agent.RL_Agent method)</a>
-</li>
-      </ul></li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.__delitem__">__delitem__() (rlify.agents.agent_utils.ObsWraper method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.__delitem__">__delitem__() (rlify.agents.agent_utils.ObsWrapper method)</a>
 </li>
       <li><a href="rlify.agents.html#rlify.agents.action_spaces_utils.MCAW.__dict__">__dict__ (rlify.agents.action_spaces_utils.MCAW attribute)</a>
 
       <ul>
         <li><a href="rlify.agents.html#rlify.agents.action_spaces_utils.MDA.__dict__">(rlify.agents.action_spaces_utils.MDA attribute)</a>
 </li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ExperienceReplay.__dict__">(rlify.agents.agent_utils.ExperienceReplay attribute)</a>
+        <li><a href="rlify.agents.html#rlify.agents.agent_utils.IData.__dict__">(rlify.agents.agent_utils.IData attribute)</a>
 </li>
         <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsShapeWraper.__dict__">(rlify.agents.agent_utils.ObsShapeWraper attribute)</a>
 </li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.__dict__">(rlify.agents.agent_utils.ObsWraper attribute)</a>
-</li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv.__dict__">(rlify.agents.agent_utils.ParallelEnv attribute)</a>
-</li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv_m.__dict__">(rlify.agents.agent_utils.ParallelEnv_m attribute)</a>
-</li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.SingleEnv_m.__dict__">(rlify.agents.agent_utils.SingleEnv_m attribute)</a>
+        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.__dict__">(rlify.agents.agent_utils.ObsWrapper attribute)</a>
 </li>
         <li><a href="rlify.agents.html#rlify.agents.agent_utils.TrainMetrics.__dict__">(rlify.agents.agent_utils.TrainMetrics attribute)</a>
 </li>
@@ -194,10 +199,24 @@
         <li><a href="rlify.agents.html#rlify.agents.explorers.Explorer.__dict__">(rlify.agents.explorers.Explorer attribute)</a>
 </li>
       </ul></li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.__getitem__">__getitem__() (rlify.agents.agent_utils.ObsWraper method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.LambdaDataset.__getitem__">__getitem__() (rlify.agents.agent_utils.LambdaDataset method)</a>
 
       <ul>
+        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.__getitem__">(rlify.agents.agent_utils.ObsWrapper method)</a>
+</li>
         <li><a href="rlify.agents.html#rlify.agents.agent_utils.TrainMetrics.__getitem__">(rlify.agents.agent_utils.TrainMetrics method)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPODataset.__getitem__">(rlify.agents.ppo_agent.PPODataset method)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.DQNDataset.__getitem__">(rlify.agents.vdqn_agent.DQNDataset method)</a>
+</li>
+      </ul></li>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.LambdaDataset.__getitems__">__getitems__() (rlify.agents.agent_utils.LambdaDataset method)</a>
+
+      <ul>
+        <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPODataset.__getitems__">(rlify.agents.ppo_agent.PPODataset method)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.DQNDataset.__getitems__">(rlify.agents.vdqn_agent.DQNDataset method)</a>
 </li>
       </ul></li>
       <li><a href="rlify.agents.html#rlify.agents.action_spaces_utils.CAW.__init__">__init__() (rlify.agents.action_spaces_utils.CAW method)</a>
@@ -207,19 +226,15 @@
 </li>
         <li><a href="rlify.agents.html#rlify.agents.action_spaces_utils.MDA.__init__">(rlify.agents.action_spaces_utils.MDA method)</a>
 </li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ExperienceReplay.__init__">(rlify.agents.agent_utils.ExperienceReplay method)</a>
+        <li><a href="rlify.agents.html#rlify.agents.agent_utils.IData.__init__">(rlify.agents.agent_utils.IData method)</a>
 </li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ForgettingExperienceReplay.__init__">(rlify.agents.agent_utils.ForgettingExperienceReplay method)</a>
+        <li><a href="rlify.agents.html#rlify.agents.agent_utils.LambdaData.__init__">(rlify.agents.agent_utils.LambdaData method)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.agent_utils.LambdaDataset.__init__">(rlify.agents.agent_utils.LambdaDataset method)</a>
 </li>
         <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsShapeWraper.__init__">(rlify.agents.agent_utils.ObsShapeWraper method)</a>
 </li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.__init__">(rlify.agents.agent_utils.ObsWraper method)</a>
-</li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv.__init__">(rlify.agents.agent_utils.ParallelEnv method)</a>
-</li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv_m.__init__">(rlify.agents.agent_utils.ParallelEnv_m method)</a>
-</li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.SingleEnv_m.__init__">(rlify.agents.agent_utils.SingleEnv_m method)</a>
+        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.__init__">(rlify.agents.agent_utils.ObsWrapper method)</a>
 </li>
         <li><a href="rlify.agents.html#rlify.agents.agent_utils.TrainMetrics.__init__">(rlify.agents.agent_utils.TrainMetrics method)</a>
 </li>
@@ -239,6 +254,14 @@
 </li>
         <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPO_Agent.__init__">(rlify.agents.ppo_agent.PPO_Agent method)</a>
 </li>
+        <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPOData.__init__">(rlify.agents.ppo_agent.PPOData method)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPODataset.__init__">(rlify.agents.ppo_agent.PPODataset method)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.DQNData.__init__">(rlify.agents.vdqn_agent.DQNData method)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.DQNDataset.__init__">(rlify.agents.vdqn_agent.DQNDataset method)</a>
+</li>
         <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.VDQN_Agent.__init__">(rlify.agents.vdqn_agent.VDQN_Agent method)</a>
 </li>
         <li><a href="rlify.models.html#rlify.models.base_model.BaseModel.__init__">(rlify.models.base_model.BaseModel method)</a>
@@ -252,18 +275,20 @@
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="rlify.models.html#rlify.models.base_model.BaseModel.__init_subclass__">__init_subclass__() (rlify.models.base_model.BaseModel class method)</a>
-</li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.__iter__">__iter__() (rlify.agents.agent_utils.ObsWraper method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.__iter__">__iter__() (rlify.agents.agent_utils.ObsWrapper method)</a>
 
       <ul>
         <li><a href="rlify.agents.html#rlify.agents.agent_utils.TrainMetrics.__iter__">(rlify.agents.agent_utils.TrainMetrics method)</a>
 </li>
       </ul></li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ExperienceReplay.__len__">__len__() (rlify.agents.agent_utils.ExperienceReplay method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.LambdaDataset.__len__">__len__() (rlify.agents.agent_utils.LambdaDataset method)</a>
 
       <ul>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.__len__">(rlify.agents.agent_utils.ObsWraper method)</a>
+        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.__len__">(rlify.agents.agent_utils.ObsWrapper method)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPODataset.__len__">(rlify.agents.ppo_agent.PPODataset method)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.DQNDataset.__len__">(rlify.agents.vdqn_agent.DQNDataset method)</a>
 </li>
       </ul></li>
       <li><a href="rlify.agents.html#rlify.agents.action_spaces_utils.CAW.__module__">__module__ (rlify.agents.action_spaces_utils.CAW attribute)</a>
@@ -273,19 +298,15 @@
 </li>
         <li><a href="rlify.agents.html#rlify.agents.action_spaces_utils.MDA.__module__">(rlify.agents.action_spaces_utils.MDA attribute)</a>
 </li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ExperienceReplay.__module__">(rlify.agents.agent_utils.ExperienceReplay attribute)</a>
+        <li><a href="rlify.agents.html#rlify.agents.agent_utils.IData.__module__">(rlify.agents.agent_utils.IData attribute)</a>
 </li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ForgettingExperienceReplay.__module__">(rlify.agents.agent_utils.ForgettingExperienceReplay attribute)</a>
+        <li><a href="rlify.agents.html#rlify.agents.agent_utils.LambdaData.__module__">(rlify.agents.agent_utils.LambdaData attribute)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.agent_utils.LambdaDataset.__module__">(rlify.agents.agent_utils.LambdaDataset attribute)</a>
 </li>
         <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsShapeWraper.__module__">(rlify.agents.agent_utils.ObsShapeWraper attribute)</a>
 </li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.__module__">(rlify.agents.agent_utils.ObsWraper attribute)</a>
-</li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv.__module__">(rlify.agents.agent_utils.ParallelEnv attribute)</a>
-</li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv_m.__module__">(rlify.agents.agent_utils.ParallelEnv_m attribute)</a>
-</li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.SingleEnv_m.__module__">(rlify.agents.agent_utils.SingleEnv_m attribute)</a>
+        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.__module__">(rlify.agents.agent_utils.ObsWrapper attribute)</a>
 </li>
         <li><a href="rlify.agents.html#rlify.agents.agent_utils.TrainMetrics.__module__">(rlify.agents.agent_utils.TrainMetrics attribute)</a>
 </li>
@@ -305,6 +326,14 @@
 </li>
         <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPO_Agent.__module__">(rlify.agents.ppo_agent.PPO_Agent attribute)</a>
 </li>
+        <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPOData.__module__">(rlify.agents.ppo_agent.PPOData attribute)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPODataset.__module__">(rlify.agents.ppo_agent.PPODataset attribute)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.DQNData.__module__">(rlify.agents.vdqn_agent.DQNData attribute)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.DQNDataset.__module__">(rlify.agents.vdqn_agent.DQNDataset attribute)</a>
+</li>
         <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.VDQN_Agent.__module__">(rlify.agents.vdqn_agent.VDQN_Agent attribute)</a>
 </li>
         <li><a href="rlify.models.html#rlify.models.base_model.BaseModel.__module__">(rlify.models.base_model.BaseModel attribute)</a>
@@ -316,38 +345,40 @@
         <li><a href="rlify.models.html#rlify.models.rnn.ReccurentLayer.__module__">(rlify.models.rnn.ReccurentLayer attribute)</a>
 </li>
       </ul></li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.__mul__">__mul__() (rlify.agents.agent_utils.ObsWraper method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.__mul__">__mul__() (rlify.agents.agent_utils.ObsWrapper method)</a>
 </li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.__neg__">__neg__() (rlify.agents.agent_utils.ObsWraper method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.__neg__">__neg__() (rlify.agents.agent_utils.ObsWrapper method)</a>
 </li>
       <li><a href="rlify.agents.html#rlify.agents.agent_utils.TrainMetrics.__next__">__next__() (rlify.agents.agent_utils.TrainMetrics method)</a>
 </li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.__repr__">__repr__() (rlify.agents.agent_utils.ObsWraper method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.LambdaDataset.__parameters__">__parameters__ (rlify.agents.agent_utils.LambdaDataset attribute)</a>
+
+      <ul>
+        <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPODataset.__parameters__">(rlify.agents.ppo_agent.PPODataset attribute)</a>
 </li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.__setitem__">__setitem__() (rlify.agents.agent_utils.ObsWraper method)</a>
+        <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.DQNDataset.__parameters__">(rlify.agents.vdqn_agent.DQNDataset attribute)</a>
 </li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.__str__">__str__() (rlify.agents.agent_utils.ObsWraper method)</a>
+      </ul></li>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.__repr__">__repr__() (rlify.agents.agent_utils.ObsWrapper method)</a>
 </li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.__sub__">__sub__() (rlify.agents.agent_utils.ObsWraper method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.__setitem__">__setitem__() (rlify.agents.agent_utils.ObsWrapper method)</a>
 </li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.__truediv__">__truediv__() (rlify.agents.agent_utils.ObsWraper method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.__str__">__str__() (rlify.agents.agent_utils.ObsWrapper method)</a>
+</li>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.__sub__">__sub__() (rlify.agents.agent_utils.ObsWrapper method)</a>
+</li>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.__truediv__">__truediv__() (rlify.agents.agent_utils.ObsWrapper method)</a>
 </li>
       <li><a href="rlify.agents.html#rlify.agents.action_spaces_utils.MCAW.__weakref__">__weakref__ (rlify.agents.action_spaces_utils.MCAW attribute)</a>
 
       <ul>
         <li><a href="rlify.agents.html#rlify.agents.action_spaces_utils.MDA.__weakref__">(rlify.agents.action_spaces_utils.MDA attribute)</a>
 </li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ExperienceReplay.__weakref__">(rlify.agents.agent_utils.ExperienceReplay attribute)</a>
+        <li><a href="rlify.agents.html#rlify.agents.agent_utils.IData.__weakref__">(rlify.agents.agent_utils.IData attribute)</a>
 </li>
         <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsShapeWraper.__weakref__">(rlify.agents.agent_utils.ObsShapeWraper attribute)</a>
 </li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.__weakref__">(rlify.agents.agent_utils.ObsWraper attribute)</a>
-</li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv.__weakref__">(rlify.agents.agent_utils.ParallelEnv attribute)</a>
-</li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv_m.__weakref__">(rlify.agents.agent_utils.ParallelEnv_m attribute)</a>
-</li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.SingleEnv_m.__weakref__">(rlify.agents.agent_utils.SingleEnv_m attribute)</a>
+        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.__weakref__">(rlify.agents.agent_utils.ObsWrapper attribute)</a>
 </li>
         <li><a href="rlify.agents.html#rlify.agents.agent_utils.TrainMetrics.__weakref__">(rlify.agents.agent_utils.TrainMetrics attribute)</a>
 </li>
@@ -356,9 +387,13 @@
         <li><a href="rlify.agents.html#rlify.agents.explorers.Explorer.__weakref__">(rlify.agents.explorers.Explorer attribute)</a>
 </li>
       </ul></li>
-      <li><a href="rlify.agents.html#rlify.agents.ddpg_agent.DDPG_Agent._abc_impl">_abc_impl (rlify.agents.ddpg_agent.DDPG_Agent attribute)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.IData._abc_impl">_abc_impl (rlify.agents.agent_utils.IData attribute)</a>
 
       <ul>
+        <li><a href="rlify.agents.html#rlify.agents.agent_utils.LambdaData._abc_impl">(rlify.agents.agent_utils.LambdaData attribute)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.ddpg_agent.DDPG_Agent._abc_impl">(rlify.agents.ddpg_agent.DDPG_Agent attribute)</a>
+</li>
         <li><a href="rlify.agents.html#rlify.agents.dqn_agent.DQN_Agent._abc_impl">(rlify.agents.dqn_agent.DQN_Agent attribute)</a>
 </li>
         <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent._abc_impl">(rlify.agents.drl_agent.RL_Agent attribute)</a>
@@ -372,6 +407,10 @@
         <li><a href="rlify.agents.html#rlify.agents.heuristic_agent.Heuristic_Agent._abc_impl">(rlify.agents.heuristic_agent.Heuristic_Agent attribute)</a>
 </li>
         <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPO_Agent._abc_impl">(rlify.agents.ppo_agent.PPO_Agent attribute)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPOData._abc_impl">(rlify.agents.ppo_agent.PPOData attribute)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.DQNData._abc_impl">(rlify.agents.vdqn_agent.DQNData attribute)</a>
 </li>
         <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.VDQN_Agent._abc_impl">(rlify.agents.vdqn_agent.VDQN_Agent attribute)</a>
 </li>
@@ -388,11 +427,17 @@
 </li>
       <li><a href="rlify.agents.html#rlify.agents.explorers.RandomExplorer._act_discrete">_act_discrete() (rlify.agents.explorers.RandomExplorer method)</a>
 </li>
+      <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent._generate_nn_save_key">_generate_nn_save_key() (rlify.agents.drl_agent.RL_Agent method)</a>
+</li>
       <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.VDQN_Agent._get_dqn_experiences">_get_dqn_experiences() (rlify.agents.vdqn_agent.VDQN_Agent method)</a>
 </li>
       <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPO_Agent._get_ppo_experiences">_get_ppo_experiences() (rlify.agents.ppo_agent.PPO_Agent method)</a>
 </li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper._init_from_none_">_init_from_none_() (rlify.agents.agent_utils.ObsWraper method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper._init_from_none_">_init_from_none_() (rlify.agents.agent_utils.ObsWrapper method)</a>
+</li>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.LambdaDataset._pad_experiecne">_pad_experiecne() (rlify.agents.agent_utils.LambdaDataset method)</a>
+</li>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.LambdaDataset._prepare_data">_prepare_data() (rlify.agents.agent_utils.LambdaDataset method)</a>
 </li>
       <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent._train_n_iters">_train_n_iters() (rlify.agents.drl_agent.RL_Agent method)</a>
 </li>
@@ -428,12 +473,8 @@
 </li>
       <li><a href="rlify.agents.html#rlify.agents.agent_utils.TrainMetrics.add">add() (rlify.agents.agent_utils.TrainMetrics method)</a>
 </li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ExperienceReplay.append">append() (rlify.agents.agent_utils.ExperienceReplay method)</a>
-
-      <ul>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ForgettingExperienceReplay.append">(rlify.agents.agent_utils.ForgettingExperienceReplay method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.apply_regularization">apply_regularization() (rlify.agents.drl_agent.RL_Agent method)</a>
 </li>
-      </ul></li>
   </ul></td>
 </tr></table>
 
@@ -468,47 +509,47 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="rlify.agents.html#rlify.agents.agent_utils.calc_gaes">calc_gaes() (in module rlify.agents.agent_utils)</a>
 </li>
+      <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPO_Agent.calc_logits_values">calc_logits_values() (rlify.agents.ppo_agent.PPO_Agent method)</a>
+</li>
       <li><a href="rlify.agents.html#rlify.agents.agent_utils.calc_returns">calc_returns() (in module rlify.agents.agent_utils)</a>
 </li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.cat">cat() (rlify.agents.agent_utils.ObsWraper method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.cat">cat() (rlify.agents.agent_utils.ObsWrapper method)</a>
 </li>
       <li><a href="rlify.agents.html#rlify.agents.action_spaces_utils.CAW">CAW (class in rlify.agents.action_spaces_utils)</a>
 </li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv.change_env">change_env() (rlify.agents.agent_utils.ParallelEnv method)</a>
-
-      <ul>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv_m.change_env">(rlify.agents.agent_utils.ParallelEnv_m method)</a>
-</li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.SingleEnv_m.change_env">(rlify.agents.agent_utils.SingleEnv_m method)</a>
-</li>
-      </ul></li>
       <li><a href="rlify.agents.html#rlify.agents.ddpg_agent.DDPG_Agent.check_action_space">check_action_space() (rlify.agents.ddpg_agent.DDPG_Agent method)</a>
 
       <ul>
         <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.VDQN_Agent.check_action_space">(rlify.agents.vdqn_agent.VDQN_Agent method)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ExperienceReplay.clear">clear() (rlify.agents.agent_utils.ExperienceReplay method)</a>
-</li>
       <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.clear_exp">clear_exp() (rlify.agents.drl_agent.RL_Agent method)</a>
 
       <ul>
         <li><a href="rlify.agents.html#rlify.agents.heuristic_agent.Heuristic_Agent.clear_exp">(rlify.agents.heuristic_agent.Heuristic_Agent method)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.close_env_procs">close_env_procs() (rlify.agents.drl_agent.RL_Agent method)</a>
 </li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv.close_procs">close_procs() (rlify.agents.agent_utils.ParallelEnv method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.LambdaDataset.collate_fn">collate_fn() (rlify.agents.agent_utils.LambdaDataset method)</a>
 
       <ul>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv_m.close_procs">(rlify.agents.agent_utils.ParallelEnv_m method)</a>
+        <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPODataset.collate_fn">(rlify.agents.ppo_agent.PPODataset method)</a>
 </li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.SingleEnv_m.close_procs">(rlify.agents.agent_utils.SingleEnv_m method)</a>
+        <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.DQNDataset.collate_fn">(rlify.agents.vdqn_agent.DQNDataset method)</a>
 </li>
       </ul></li>
       <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.collect_episode_obs">collect_episode_obs() (rlify.agents.drl_agent.RL_Agent method)</a>
+</li>
+      <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.contains_reccurent_nn">contains_reccurent_nn() (rlify.agents.drl_agent.RL_Agent method)</a>
+
+      <ul>
+        <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.VDQN_Agent.contains_reccurent_nn">(rlify.agents.vdqn_agent.VDQN_Agent method)</a>
+</li>
+      </ul></li>
+      <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.criterion_using_loss_flag">criterion_using_loss_flag() (rlify.agents.drl_agent.RL_Agent method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -520,13 +561,17 @@
 </li>
       <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.define_action_space">define_action_space() (rlify.agents.drl_agent.RL_Agent method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="rlify.models.html#rlify.models.base_model.BaseModel.device">device (rlify.models.base_model.BaseModel property)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsShapeWraper.dict_types">dict_types (rlify.agents.agent_utils.ObsShapeWraper attribute)</a>
 </li>
       <li><a href="rlify.agents.html#rlify.agents.dqn_agent.DQN_Agent">DQN_Agent (class in rlify.agents.dqn_agent)</a>
+</li>
+      <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.DQNData">DQNData (class in rlify.agents.vdqn_agent)</a>
+</li>
+      <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.DQNDataset">DQNDataset (class in rlify.agents.vdqn_agent)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -541,8 +586,6 @@
 </li>
       </ul></li>
       <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.EVAL">EVAL (rlify.agents.drl_agent.RL_Agent attribute)</a>
-</li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ExperienceReplay">ExperienceReplay (class in rlify.agents.agent_utils)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
@@ -564,7 +607,7 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="rlify.models.html#rlify.models.fc.FC">FC (class in rlify.models.fc)</a>
 </li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ForgettingExperienceReplay">ForgettingExperienceReplay (class in rlify.agents.agent_utils)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.flatten">flatten() (rlify.agents.agent_utils.ObsWrapper method)</a>
 </li>
       <li><a href="rlify.models.html#rlify.models.base_model.BaseModel.forward">forward() (rlify.models.base_model.BaseModel method)</a>
 
@@ -584,51 +627,15 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="rlify.agents.html#rlify.agents.ddpg_agent.DDPG_Agent.get_actor_action_value">get_actor_action_value() (rlify.agents.ddpg_agent.DDPG_Agent method)</a>
 </li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ExperienceReplay.get_all_buffers">get_all_buffers() (rlify.agents.agent_utils.ExperienceReplay method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.get_as_tensors">get_as_tensors() (rlify.agents.agent_utils.ObsWrapper method)</a>
 </li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.get_as_tensors">get_as_tensors() (rlify.agents.agent_utils.ObsWraper method)</a>
-</li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ExperienceReplay.get_buffers_at">get_buffers_at() (rlify.agents.agent_utils.ExperienceReplay method)</a>
-</li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv.get_envs">get_envs() (rlify.agents.agent_utils.ParallelEnv method)</a>
-
-      <ul>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv_m.get_envs">(rlify.agents.agent_utils.ParallelEnv_m method)</a>
-</li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.SingleEnv_m.get_envs">(rlify.agents.agent_utils.SingleEnv_m method)</a>
-</li>
-      </ul></li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ExperienceReplay.get_episode_end_indices">get_episode_end_indices() (rlify.agents.agent_utils.ExperienceReplay method)</a>
-</li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ExperienceReplay.get_episode_start_indices">get_episode_start_indices() (rlify.agents.agent_utils.ExperienceReplay method)</a>
-</li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ExperienceReplay.get_episodes_accumulated_rewards">get_episodes_accumulated_rewards() (rlify.agents.agent_utils.ExperienceReplay method)</a>
-</li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ExperienceReplay.get_first_episodes">get_first_episodes() (rlify.agents.agent_utils.ExperienceReplay method)</a>
-</li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ExperienceReplay.get_first_samples">get_first_samples() (rlify.agents.agent_utils.ExperienceReplay method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.IData.get_dataloader">get_dataloader() (rlify.agents.agent_utils.IData method)</a>
 </li>
       <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.get_highest_score_agent_ckpt_path">get_highest_score_agent_ckpt_path() (rlify.agents.drl_agent.RL_Agent method)</a>
 </li>
       <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.get_last_collected_experiences">get_last_collected_experiences() (rlify.agents.drl_agent.RL_Agent method)</a>
-
-      <ul>
-        <li><a href="rlify.agents.html#rlify.agents.heuristic_agent.Heuristic_Agent.get_last_collected_experiences">(rlify.agents.heuristic_agent.Heuristic_Agent method)</a>
-</li>
-      </ul></li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ExperienceReplay.get_last_episodes">get_last_episodes() (rlify.agents.agent_utils.ExperienceReplay method)</a>
-
-      <ul>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ForgettingExperienceReplay.get_last_episodes">(rlify.agents.agent_utils.ForgettingExperienceReplay method)</a>
-</li>
-      </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ExperienceReplay.get_last_samples">get_last_samples() (rlify.agents.agent_utils.ExperienceReplay method)</a>
 </li>
       <li><a href="rlify.agents.html#rlify.agents.agent_utils.TrainMetrics.get_metrcis_df">get_metrcis_df() (rlify.agents.agent_utils.TrainMetrics method)</a>
-</li>
-      <li><a href="rlify.models.html#rlify.models.model_factory.get_model_class">get_model_class() (in module rlify.models.model_factory)</a>
 </li>
       <li><a href="rlify.agents.html#rlify.agents.ddpg_agent.DDPG_Agent.get_models_input_output_shape">get_models_input_output_shape() (rlify.agents.ddpg_agent.DDPG_Agent static method)</a>
 
@@ -644,15 +651,25 @@
         <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.VDQN_Agent.get_models_input_output_shape">(rlify.agents.vdqn_agent.VDQN_Agent static method)</a>
 </li>
       </ul></li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ExperienceReplay.get_num_samples_of_k_first_episodes">get_num_samples_of_k_first_episodes() (rlify.agents.agent_utils.ExperienceReplay method)</a>
-</li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ExperienceReplay.get_num_samples_of_k_last_episodes">get_num_samples_of_k_last_episodes() (rlify.agents.agent_utils.ExperienceReplay method)</a>
-</li>
-      <li><a href="rlify.models.html#rlify.models.rnn.get_seqs_indices_for_pack">get_seqs_indices_for_pack() (in module rlify.models.rnn)</a>
-</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="rlify.models.html#rlify.models.base_model.BaseModel.get_total_params">get_total_params() (rlify.models.base_model.BaseModel method)</a>
 </li>
+      <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.get_train_batch_size">get_train_batch_size() (rlify.agents.drl_agent.RL_Agent method)</a>
+</li>
       <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.get_train_metrics">get_train_metrics() (rlify.agents.drl_agent.RL_Agent method)</a>
+</li>
+      <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.get_trajectories_data">get_trajectories_data() (rlify.agents.drl_agent.RL_Agent method)</a>
+
+      <ul>
+        <li><a href="rlify.agents.html#rlify.agents.heuristic_agent.Heuristic_Agent.get_trajectories_data">(rlify.agents.heuristic_agent.Heuristic_Agent method)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPO_Agent.get_trajectories_data">(rlify.agents.ppo_agent.PPO_Agent method)</a>
+</li>
+        <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.VDQN_Agent.get_trajectories_data">(rlify.agents.vdqn_agent.VDQN_Agent method)</a>
+</li>
+      </ul></li>
+      <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.gracefully_close_envs">gracefully_close_envs() (rlify.agents.drl_agent.RL_Agent method)</a>
 </li>
       <li><a href="rlify.models.html#rlify.models.rnn.GRU">GRU (class in rlify.models.rnn)</a>
 </li>
@@ -680,22 +697,18 @@
 <h2 id="I">I</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ExperienceReplay.init_buffers">init_buffers() (rlify.agents.agent_utils.ExperienceReplay method)</a>
-
-      <ul>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ForgettingExperienceReplay.init_buffers">(rlify.agents.agent_utils.ForgettingExperienceReplay method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.IData">IData (class in rlify.agents.agent_utils)</a>
 </li>
-      </ul></li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.init_from_dict">init_from_dict() (rlify.agents.agent_utils.ObsWraper method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.init_from_dict">init_from_dict() (rlify.agents.agent_utils.ObsWrapper method)</a>
 </li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.init_from_list_generic_data">init_from_list_generic_data() (rlify.agents.agent_utils.ObsWraper method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.init_from_list_generic_data">init_from_list_generic_data() (rlify.agents.agent_utils.ObsWrapper method)</a>
 </li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.init_from_list_obsWrapper_obs">init_from_list_obsWrapper_obs() (rlify.agents.agent_utils.ObsWraper method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.init_from_list_obsWrapper_obs">init_from_list_obsWrapper_obs() (rlify.agents.agent_utils.ObsWrapper method)</a>
+</li>
+      <li><a href="rlify.agents.html#rlify.agents.dqn_agent.DQN_Agent.init_target_update_rule">init_target_update_rule() (rlify.agents.dqn_agent.DQN_Agent method)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="rlify.agents.html#rlify.agents.dqn_agent.DQN_Agent.init_target_update_rule">init_target_update_rule() (rlify.agents.dqn_agent.DQN_Agent method)</a>
-</li>
       <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.init_tb_writer">init_tb_writer() (rlify.agents.drl_agent.RL_Agent method)</a>
 </li>
       <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.intrisic_reward_func">intrisic_reward_func() (rlify.agents.drl_agent.RL_Agent method)</a>
@@ -706,7 +719,7 @@
         <li><a href="rlify.models.html#rlify.models.rnn.ReccurentLayer.is_rnn">(rlify.models.rnn.ReccurentLayer attribute)</a>
 </li>
       </ul></li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.items">items() (rlify.agents.agent_utils.ObsWraper method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.items">items() (rlify.agents.agent_utils.ObsWrapper method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -714,7 +727,7 @@
 <h2 id="K">K</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.keys">keys() (rlify.agents.agent_utils.ObsWraper method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.keys">keys() (rlify.agents.agent_utils.ObsWrapper method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -722,6 +735,10 @@
 <h2 id="L">L</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.LambdaData">LambdaData (class in rlify.agents.agent_utils)</a>
+</li>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.LambdaDataset">LambdaDataset (class in rlify.agents.agent_utils)</a>
+</li>
       <li><a href="rlify.agents.html#rlify.agents.ddpg_agent.DDPG_Agent.load_agent">load_agent() (rlify.agents.ddpg_agent.DDPG_Agent method)</a>
 
       <ul>
@@ -784,8 +801,6 @@
 </li>
         <li><a href="rlify.models.html#module-rlify.models.fc">rlify.models.fc</a>
 </li>
-        <li><a href="rlify.models.html#module-rlify.models.model_factory">rlify.models.model_factory</a>
-</li>
         <li><a href="rlify.models.html#module-rlify.models.rnn">rlify.models.rnn</a>
 </li>
       </ul></li>
@@ -797,15 +812,9 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.norm_obs">norm_obs() (rlify.agents.drl_agent.RL_Agent method)</a>
 </li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.np_append">np_append() (rlify.agents.agent_utils.ObsWraper method)</a>
-</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.np_cat">np_cat() (rlify.agents.agent_utils.ObsWraper method)</a>
-</li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.np_roll">np_roll() (rlify.agents.agent_utils.ObsWraper method)</a>
-</li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.np_zero_roll">np_zero_roll() (rlify.agents.agent_utils.ObsWraper method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.np_roll">np_roll() (rlify.agents.agent_utils.ObsWrapper method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -817,7 +826,7 @@
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper">ObsWraper (class in rlify.agents.agent_utils)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper">ObsWrapper (class in rlify.agents.agent_utils)</a>
 </li>
       <li><a href="rlify.agents.html#rlify.agents.agent_utils.TrainMetrics.on_epoch_end">on_epoch_end() (rlify.agents.agent_utils.TrainMetrics method)</a>
 </li>
@@ -827,15 +836,19 @@
 <h2 id="P">P</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="rlify.models.html#rlify.models.rnn.pack_from_done_indices">pack_from_done_indices() (in module rlify.models.rnn)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.pad_from_done_indices">pad_from_done_indices() (in module rlify.agents.agent_utils)</a>
 </li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv">ParallelEnv (class in rlify.agents.agent_utils)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.pad_states_from_done_indices">pad_states_from_done_indices() (in module rlify.agents.agent_utils)</a>
 </li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv_m">ParallelEnv_m (class in rlify.agents.agent_utils)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.pad_tensors_from_done_indices">pad_tensors_from_done_indices() (in module rlify.agents.agent_utils)</a>
+</li>
+      <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPO_Agent">PPO_Agent (class in rlify.agents.ppo_agent)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPO_Agent">PPO_Agent (class in rlify.agents.ppo_agent)</a>
+      <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPOData">PPOData (class in rlify.agents.ppo_agent)</a>
+</li>
+      <li><a href="rlify.agents.html#rlify.agents.ppo_agent.PPODataset">PPODataset (class in rlify.agents.ppo_agent)</a>
 </li>
       <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.pre_process_obs_for_act">pre_process_obs_for_act() (rlify.agents.drl_agent.RL_Agent method)</a>
 </li>
@@ -851,27 +864,15 @@
 </li>
       <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.read_action_space_properties">read_action_space_properties() (rlify.agents.drl_agent.RL_Agent method)</a>
 </li>
+      <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.read_nn_properties">read_nn_properties() (rlify.agents.drl_agent.RL_Agent static method)</a>
+</li>
       <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.read_obs_space_properties">read_obs_space_properties() (rlify.agents.drl_agent.RL_Agent method)</a>
 </li>
       <li><a href="rlify.models.html#rlify.models.rnn.ReccurentLayer">ReccurentLayer (class in rlify.models.rnn)</a>
 </li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv.render">render() (rlify.agents.agent_utils.ParallelEnv method)</a>
+      <li><a href="rlify.models.html#rlify.models.base_model.BaseModel.reset">reset() (rlify.models.base_model.BaseModel method)</a>
 
       <ul>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv_m.render">(rlify.agents.agent_utils.ParallelEnv_m method)</a>
-</li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.SingleEnv_m.render">(rlify.agents.agent_utils.SingleEnv_m method)</a>
-</li>
-      </ul></li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv.reset">reset() (rlify.agents.agent_utils.ParallelEnv method)</a>
-
-      <ul>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv_m.reset">(rlify.agents.agent_utils.ParallelEnv_m method)</a>
-</li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.SingleEnv_m.reset">(rlify.agents.agent_utils.SingleEnv_m method)</a>
-</li>
-        <li><a href="rlify.models.html#rlify.models.base_model.BaseModel.reset">(rlify.models.base_model.BaseModel method)</a>
-</li>
         <li><a href="rlify.models.html#rlify.models.fc.FC.reset">(rlify.models.fc.FC method)</a>
 </li>
         <li><a href="rlify.models.html#rlify.models.rnn.GRU.reset">(rlify.models.rnn.GRU method)</a>
@@ -904,8 +905,6 @@
         <li><a href="rlify.agents.html#module-rlify.agents.action_spaces_utils">module</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     rlify.agents.agent_utils
 
@@ -913,6 +912,8 @@
         <li><a href="rlify.agents.html#module-rlify.agents.agent_utils">module</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     rlify.agents.ddpg_agent
 
@@ -977,13 +978,6 @@
 </li>
       </ul></li>
       <li>
-    rlify.models.model_factory
-
-      <ul>
-        <li><a href="rlify.models.html#module-rlify.models.model_factory">module</a>
-</li>
-      </ul></li>
-      <li>
     rlify.models.rnn
 
       <ul>
@@ -1006,10 +1000,6 @@
         <li><a href="rlify.agents.html#rlify.agents.action_spaces_utils.MDA.sample">(rlify.agents.action_spaces_utils.MDA method)</a>
 </li>
       </ul></li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ExperienceReplay.sample_random_batch">sample_random_batch() (rlify.agents.agent_utils.ExperienceReplay method)</a>
-</li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ExperienceReplay.sample_random_episodes">sample_random_episodes() (rlify.agents.agent_utils.ExperienceReplay method)</a>
-</li>
       <li><a href="rlify.agents.html#rlify.agents.ddpg_agent.DDPG_Agent.save_agent">save_agent() (rlify.agents.ddpg_agent.DDPG_Agent method)</a>
 
       <ul>
@@ -1078,9 +1068,7 @@
         <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.VDQN_Agent.setup_models">(rlify.agents.vdqn_agent.VDQN_Agent method)</a>
 </li>
       </ul></li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.SingleEnv_m">SingleEnv_m (class in rlify.agents.agent_utils)</a>
-</li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.slice_tensors">slice_tensors() (rlify.agents.agent_utils.ObsWraper method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.slice_tensors">slice_tensors() (rlify.agents.agent_utils.ObsWrapper method)</a>
 </li>
       <li><a href="rlify.agents.html#rlify.agents.ddpg_agent.DDPG_Agent.soft_target_update">soft_target_update() (rlify.agents.ddpg_agent.DDPG_Agent method)</a>
 
@@ -1088,22 +1076,18 @@
         <li><a href="rlify.agents.html#rlify.agents.dqn_agent.DQN_Agent.soft_target_update">(rlify.agents.dqn_agent.DQN_Agent method)</a>
 </li>
       </ul></li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.squeeze">squeeze() (rlify.agents.agent_utils.ObsWraper method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.squeeze">squeeze() (rlify.agents.agent_utils.ObsWrapper method)</a>
 </li>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv.step">step() (rlify.agents.agent_utils.ParallelEnv method)</a>
-
-      <ul>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.ParallelEnv_m.step">(rlify.agents.agent_utils.ParallelEnv_m method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.stack">stack() (rlify.agents.agent_utils.ObsWrapper method)</a>
 </li>
-        <li><a href="rlify.agents.html#rlify.agents.agent_utils.SingleEnv_m.step">(rlify.agents.agent_utils.SingleEnv_m method)</a>
-</li>
-      </ul></li>
   </ul></td>
 </tr></table>
 
 <h2 id="T">T</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.to">to() (rlify.agents.agent_utils.ObsWrapper method)</a>
+</li>
       <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.TRAIN">TRAIN (rlify.agents.drl_agent.RL_Agent attribute)</a>
 </li>
       <li><a href="rlify.agents.html#rlify.agents.heuristic_agent.Heuristic_Agent.train">train() (rlify.agents.heuristic_agent.Heuristic_Agent method)</a>
@@ -1122,7 +1106,7 @@
 <h2 id="U">U</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.unsqueeze">unsqueeze() (rlify.agents.agent_utils.ObsWraper method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.unsqueeze">unsqueeze() (rlify.agents.agent_utils.ObsWrapper method)</a>
 </li>
       <li><a href="rlify.agents.html#rlify.agents.explorers.Explorer.update">update() (rlify.agents.explorers.Explorer method)</a>
 
@@ -1148,7 +1132,7 @@
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.update_shape">update_shape() (rlify.agents.agent_utils.ObsWraper method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.update_shape">update_shape() (rlify.agents.agent_utils.ObsWrapper method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -1156,19 +1140,13 @@
 <h2 id="V">V</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWraper.values">values() (rlify.agents.agent_utils.ObsWraper method)</a>
+      <li><a href="rlify.agents.html#rlify.agents.drl_agent.RL_Agent.validate_models">validate_models() (rlify.agents.drl_agent.RL_Agent method)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="rlify.agents.html#rlify.agents.agent_utils.ObsWrapper.values">values() (rlify.agents.agent_utils.ObsWrapper method)</a>
+</li>
       <li><a href="rlify.agents.html#rlify.agents.vdqn_agent.VDQN_Agent">VDQN_Agent (class in rlify.agents.vdqn_agent)</a>
-</li>
-  </ul></td>
-</tr></table>
-
-<h2 id="W">W</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="rlify.agents.html#rlify.agents.agent_utils.worker">worker() (in module rlify.agents.agent_utils)</a>
 </li>
   </ul></td>
 </tr></table>
